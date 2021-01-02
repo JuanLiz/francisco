@@ -14,10 +14,10 @@ addons:
 script:
     - sudo sh -c "mkdir /video && chown $(whoami):$(whoami) /video" && cd /video
     - ffmpeg -i "https://proxy-17.nyc.dailymotion.com/sec(SR36U2JEgenq7Sr8mbsN2ileX8xlR3qbD1kn-uuLGjuuPVgdnHXiB71foM72iaRNuMIXsqFrCRdBPzNY_KyjR_vokcgXIN2QggJleMXgIYI)/video/387/305/478503783_mp4_h264_aac_fhd.m3u8" -c copy -bsf:a aac_adtstoasc "Capítulo 1 - Parte 1 - Magdalena y la banda se enfrentan a Francisco.mp4"
-    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(zvUbbWr2oKyjb9WcqKTKNc-3oUWlFISgFf4DlJuNFxwUy-ObZeAn81rAEagrpLnehuLYI0aloiXyuw-EWbc1tzt7dvlZxkt_gN_2kACcGsQ)/video/274/405/478504472_mp4_h264_aac_fhd.m3u8" -c copy -bsf:a aac_adtstoasc "Capítulo 1 - Parte 2 - Dago se aprovecha de Gabriela.mp4"
-    - ffmpeg -i "https://proxy-07.nyc.dailymotion.com/sec(ie_KKMG3lngG0gpoPHy7FK_yEEykS0yZnILmO01l5rkNaOFpjE68AVmp4YDUmrpWj5_z_QiyrqMsS1Ezx-ZeyEzVboHFCiRhqKpzjYi7WkU)/video/174/405/478504471_mp4_h264_aac_fhd.m3u8" -c copy -bsf:a aac_adtstoasc "Capítulo 2 - Parte 1 - Gabriela queda embarazada y se va de su casa.mp4"
-    - ffmpeg -i "https://proxy-10.nyc.dailymotion.com/sec(5D-upqDJxZ7oMdF5vyvZyBgs9iBLk1uUa6CCrQPIHu7e_kLsVZHNhbuPVTluVoqLszdd0P_9hrMEX66D8maiIdKRh6DZuofqhsz5s0XaEME)/video/263/505/478505362_mp4_h264_aac_fhd.m3u8" -c copy -bsf:a aac_adtstoasc "Capítulo 2 - Parte 2 - Francisco es acusado de embarazar a Gabriela.mp4"
-    - ffmpeg -i "https://proxy-06.nyc.dailymotion.com/sec(yz7C7zAq75CjlYcDfiRgVccKsr6E-tMQeXnOwWADuIfeVB2EHA059CdPbEMFe1mEwOw1RHbWO7KbdXERfbSPJD3mR6EjhWuIvWdrBBtjr9E)/video/332/757/478757233_mp4_h264_aac_hd_hfr.m3u8" -c copy -bsf:a aac_adtstoasc "Capítulo 3 - Parte 1 - Le tienden una trampa a Dago.mp4"
+#    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(zvUbbWr2oKyjb9WcqKTKNc-3oUWlFISgFf4DlJuNFxwUy-ObZeAn81rAEagrpLnehuLYI0aloiXyuw-EWbc1tzt7dvlZxkt_gN_2kACcGsQ)/video/274/405/478504472_mp4_h264_aac_fhd.m3u8" -c copy -bsf:a aac_adtstoasc "Capítulo 1 - Parte 2 - Dago se aprovecha de Gabriela.mp4"
+#    - ffmpeg -i "https://proxy-07.nyc.dailymotion.com/sec(ie_KKMG3lngG0gpoPHy7FK_yEEykS0yZnILmO01l5rkNaOFpjE68AVmp4YDUmrpWj5_z_QiyrqMsS1Ezx-ZeyEzVboHFCiRhqKpzjYi7WkU)/video/174/405/478504471_mp4_h264_aac_fhd.m3u8" -c copy -bsf:a aac_adtstoasc "Capítulo 2 - Parte 1 - Gabriela queda embarazada y se va de su casa.mp4"
+#    - ffmpeg -i "https://proxy-10.nyc.dailymotion.com/sec(5D-upqDJxZ7oMdF5vyvZyBgs9iBLk1uUa6CCrQPIHu7e_kLsVZHNhbuPVTluVoqLszdd0P_9hrMEX66D8maiIdKRh6DZuofqhsz5s0XaEME)/video/263/505/478505362_mp4_h264_aac_fhd.m3u8" -c copy -bsf:a aac_adtstoasc "Capítulo 2 - Parte 2 - Francisco es acusado de embarazar a Gabriela.mp4"
+#    - ffmpeg -i "https://proxy-06.nyc.dailymotion.com/sec(yz7C7zAq75CjlYcDfiRgVccKsr6E-tMQeXnOwWADuIfeVB2EHA059CdPbEMFe1mEwOw1RHbWO7KbdXERfbSPJD3mR6EjhWuIvWdrBBtjr9E)/video/332/757/478757233_mp4_h264_aac_hd_hfr.m3u8" -c copy -bsf:a aac_adtstoasc "Capítulo 3 - Parte 1 - Le tienden una trampa a Dago.mp4"
 #    - ffmpeg -i "https://proxy-04.nyc.dailymotion.com/sec(aOXeWEr3a_xENLWls5_zvrRkbUJZvtc4Lq9l2G1zSf6HMjRUzVFzDgyzgV2y7CNyVRzzO6ybRBq5NC7tkLpTJkFMxB2oeQeWbU4QLCdwxMk)/video/374/757/478757473_mp4_h264_aac_hd_hfr.m3u8" -c copy -bsf:a aac_adtstoasc "Capítulo 3 - Parte 2 - Don Ezequiel se niega a ver la verdad de Dago.mp4"
 #    - ffmpeg -i "https://proxy-12.nyc.dailymotion.com/sec(LL70bUvxgBlOH8BfPRBrX6-jc6ASvS2YYnpbKvHgRuXCMBNhWVUf3kU8oprCZJD_Cw5EFzk2-P0xR27gBw7LJX8DOIoh-HWJ8COwNrvGC_8)/video/215/757/478757512_mp4_h264_aac_fhd.m3u8" -c copy -bsf:a aac_adtstoasc "Capítulo 4 - Parte 1 - Magdalena sufre de violencia en su hogar.mp4"
 #    - ffmpeg -i "https://proxy-19.nyc.dailymotion.com/sec(I25uFPyvn48zyzIPUDuzDJie9kGGZuvy8y7lu-8F_CEVFGqCbFFCm_juCR0miAIo-vVfEVC1oLhS_OP-IDg5Mcl89oSPo1oIhtpATQZxPKY)/video/708/957/478759807_mp4_h264_aac_fhd.m3u8" -c copy -bsf:a aac_adtstoasc "Capítulo 4 - Parte 2 - Dago se va del colegio.mp4"
@@ -28,11 +28,16 @@ deploy:
     provider: releases
     token: $GitOAUTHToken
     file:
-    - "Capítulo 1 - Parte 1 - Magdalena y la banda se enfrentan a Francisco.mp4"
-    - "Capítulo 1 - Parte 2 - Dago se aprovecha de Gabriela.mp4"
-    - "Capítulo 2 - Parte 1 - Gabriela queda embarazada y se va de su casa.mp4"
-    - "Capítulo 2 - Parte 2 - Francisco es acusado de embarazar a Gabriela.mp4"
-    - "Capítulo 3 - Parte 1 - Le tienden una trampa a Dago.mp4"
+        - "Capítulo 1 - Parte 1 - Magdalena y la banda se enfrentan a Francisco.mp4"
+#        - "Capítulo 1 - Parte 2 - Dago se aprovecha de Gabriela.mp4"
+#        - "Capítulo 2 - Parte 1 - Gabriela queda embarazada y se va de su casa.mp4"
+#        - "Capítulo 2 - Parte 2 - Francisco es acusado de embarazar a Gabriela.mp4"
+#        - "Capítulo 3 - Parte 1 - Le tienden una trampa a Dago.mp4"
+#        - "Capítulo 3 - Parte 2 - Don Ezequiel se niega a ver la verdad de Dago.mp4"
+#        - "Capítulo 4 - Parte 1 - Magdalena sufre de violencia en su hogar.mp4"
+#        - "Capítulo 4 - Parte 2 - Dago se va del colegio.mp4"
+#        - "Capítulo 5 - Parte 1 - Magdalena intenta acabar con su vida.mp4"
+#        - "Capítulo 5 - Parte 2 - Ana Mara llega al Jimmy Carter.mp4"
     skip_cleanup: true
     on:
       branch: main
