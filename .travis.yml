@@ -9,11 +9,11 @@ addons:
     packages:
     - curl
     - ffmpeg
+    - lftp
 
     
 script:
     - sudo sh -c "mkdir /video && chown $(whoami):$(whoami) /video" && cd /video
-    - cp -r $TRAVIS_BUILD_DIR/ftpcommands.txt /video
     - ffmpeg -i "https://proxy-17.nyc.dailymotion.com/sec(SR36U2JEgenq7Sr8mbsN2ileX8xlR3qbD1kn-uuLGjuIX3CxSi86jxFHKHhw6iFH6xDSNcKm9c8csa92F5T0_-oU1mpa24plF12gdllY_Q4)/video/387/305/478503783_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C1P1.mp4"
 #    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(zvUbbWr2oKyjb9WcqKTKNc-3oUWlFISgFf4DlJuNFxwKOK9rVvehuplL3SQxQSdelrLj7pYE2BBv07xfOIj9h9hrXhBN2nl-1Ns8VQ0NncM)/video/274/405/478504472_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C1P2.mp4"
 #    - ffmpeg -i "https://proxy-07.nyc.dailymotion.com/sec(ie_KKMG3lngG0gpoPHy7FK_yEEykS0yZnILmO01l5rn9QWx3LXz3d2tPoVrmpTyg1-AafPSPym3dOuVDIkJi6qz4Kvac1_dlS-DVEoYkOfk)/video/174/405/478504471_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C2P1.mp4"
@@ -45,8 +45,8 @@ script:
 #    --------------FTP To mystream--------------------
 
 #    - ftp -in -u ftp://JuanLiz:ouk0w7mjx8kfg6mr@ftp.mystream.to/ C1P1.mp4
-    - ftp -n < ftpcommands.txt
-    
+    - lftp -u JuanLiz,ouk0w7mjx8kfg6mr -e "put C1P1.mp4;quit" ftp.mystream.to
+
 
     
 
