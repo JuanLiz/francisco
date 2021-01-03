@@ -1,4 +1,4 @@
- open ftp.mystream.to
- user JuanLiz ouk0w7mjx8kfg6mr
- put C1P1.mp4 C1P1.mp4
- bye
+open ftp.mystream.to
+user diegoliz jsrhue9a3mybmbwz
+put C1P1.mp4 
+bye
