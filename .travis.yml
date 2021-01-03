@@ -45,7 +45,9 @@ script:
 #    --------------FTP To mystream--------------------
 
 #    - ftp -in -u ftp://JuanLiz:ouk0w7mjx8kfg6mr@ftp.mystream.to/ C1P1.mp4
-    - lftp -u JuanLiz,ouk0w7mjx8kfg6mr -e "put C1P1.mp4;quit" ftp.mystream.to
+#    - lftp -u JuanLiz,ouk0w7mjx8kfg6mr -e "put C1P1.mp4;quit" ftp.mystream.to
+    - ftp ftp://JuanLiz:ouk0w7mjx8kfg6mr@ftp.mystream.to/ <<< "put C1P1.mp4"
+
 
 
     
