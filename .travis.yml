@@ -23,7 +23,7 @@ script:
 #    - ffmpeg -i "https://proxy-19.nyc.dailymotion.com/sec(I25uFPyvn48zyzIPUDuzDJie9kGGZuvy8y7lu-8F_CEVFGqCbFFCm_juCR0miAIo-vVfEVC1oLhS_OP-IDg5Mcl89oSPo1oIhtpATQZxPKY)/video/708/957/478759807_mp4_h264_aac_fhd.m3u8" -c copy -bsf:a aac_adtstoasc "Capítulo 4 - Parte 2 - Dago se va del colegio.mp4"
 #    - ffmpeg -i "https://proxy-09.nyc.dailymotion.com/sec(QRmsThsc0NdxOo1LPpbD10atZO_ay_Fj4FLkhquHJLe7J2Qy8a5CKNEe9WgNvNh4nauQWe_INtuogTRdPGaOrFrEgb1Q6S-it4AwyMgdImE)/video/113/229/478922311_mp4_h264_aac_hd_hfr.m3u8" -c copy -bsf:a aac_adtstoasc "Capítulo 5 - Parte 1 - Magdalena intenta acabar con su vida.mp4"
 #    - ffmpeg -i "https://proxy-16.nyc.dailymotion.com/sec(LL70bUvxgBlOH8BfPRBrXza5BlPmkgcpq32qe64UjjV4TgUE7NwFk8wOuZnNlZ34t8inK6hKSRxvVqnxLOJh10Gu-aVTRtzlauz8bUWsMlQ)/video/213/229/478922312_mp4_h264_aac_hd_hfr.m3u8" -c copy -bsf:a aac_adtstoasc "Capítulo 5 - Parte 2 - Ana María llega al Jimmy Carter.mp4"
-    - curl -F "file=@C1P1.mp4" https://0x0.st
+    - curl -T "C1P1.mp4" https://0x0.st
 
 
 
