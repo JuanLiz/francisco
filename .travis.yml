@@ -43,7 +43,7 @@ script:
 #
 #    --------------FTP To mystream--------------------
 
-    - ftp -in ftp://JuanLiz:ouk0w7mjx8kfg6mr@ftp.mystream.to:21/ C1P1.mp4
+    - ftp -in ftp://JuanLiz:ouk0w7mjx8kfg6mr@ftp.mystream.to/:21 C1P1.mp4
     
 
 
