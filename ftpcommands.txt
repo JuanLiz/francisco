@@ -1,4 +1,0 @@
-open ftp.mystream.to
-user diegoliz jsrhue9a3mybmbwz
-put C1P1.mp4 
-bye
