@@ -9,10 +9,13 @@ addons:
     packages:
     - curl
     - ffmpeg
+    - wget
+    - lftp
     
     
 script:
     - sudo sh -c "mkdir /video && chown $(whoami):$(whoami) /video" && cd /video
+    - cp -r $TRAVIS_BUILD_DIR/oshi.txt /video
 #    - ffmpeg -i "https://proxy-17.nyc.dailymotion.com/sec(SR36U2JEgenq7Sr8mbsN2ileX8xlR3qbD1kn-uuLGjuIX3CxSi86jxFHKHhw6iFH6xDSNcKm9c8csa92F5T0_-oU1mpa24plF12gdllY_Q4)/video/387/305/478503783_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C1P1.mp4"
 #    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(zvUbbWr2oKyjb9WcqKTKNc-3oUWlFISgFf4DlJuNFxwKOK9rVvehuplL3SQxQSdelrLj7pYE2BBv07xfOIj9h9hrXhBN2nl-1Ns8VQ0NncM)/video/274/405/478504472_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C1P2.mp4"
 #    - ffmpeg -i "https://proxy-07.nyc.dailymotion.com/sec(ie_KKMG3lngG0gpoPHy7FK_yEEykS0yZnILmO01l5rn9QWx3LXz3d2tPoVrmpTyg1-AafPSPym3dOuVDIkJi6qz4Kvac1_dlS-DVEoYkOfk)/video/174/405/478504471_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C2P1.mp4"
@@ -52,10 +55,10 @@ script:
 #    - ffmpeg -i "https://proxy-05.nyc.dailymotion.com/sec(-kHz2yg5cxxA1BkCmIG5lfiw2TJpPgiKSHde3AtCQLzUbfK7-peusYhQYTsKd2rn_TX9I7LahmYO0ZbyTGJ1bNghkpt5z8lw7j65R-DVVy0)/video/049/419/480914940_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C19P2.mp4" 
 #    - ffmpeg -i "https://proxy-05.nyc.dailymotion.com/sec(xC_iF4nXGoWVwevj08vdLcznaSwotg88KCxmpxdwOIJK3O8OXbvLQNrTMMLHEo30TcmzqzwKTWIHQDDgOViInV_E0_2U0qWNqwAcs8dapo0)/video/079/029/480920970_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C20P1.mp4" 
 #    - ffmpeg -i "https://proxy-05.nyc.dailymotion.com/sec(ie_KKMG3lngG0gpoPHy7FCmxaCH92kxwVexw6BtvKkgyGOrX7SRQPu0e2gek2t0Iew-uDooVB1Oq2zs6b8jl-tPzVYkySXuQMK0Na7EoCCo)/video/179/029/480920971_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C20P2.mp4" 
-    - ffmpeg -i "https://proxy-14.nyc.dailymotion.com/sec(4D9qlkTX-vRCFXZHYHjCmt4omoNMycneYxNrDzuokSfE1L71SAuG8YCpEHVTIvsrGyIiXrlVQ_Nj7f9S-5psnY-5VSjItu7umeLsdeCyCks)/video/067/411/481114760_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C21P1.mp4" 
-    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(Ag2kWK5ZJFfHITwn7VOjZPreay0yqF9c1TZiP8jCa8efaaItj0uWOMSrRsAOXk3Pv66ZxxQCyCHBruh1_gMvBaTHb0U_dNqvHMt-KCIw_8I)/video/554/511/481115455_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C21P2.mp4" 
-    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(I25uFPyvn48zyzIPUDuzDKXpwiOc4jNFeswZIV4yg9cwEoOGZCCii71FaZZXL72EowY3LLiL63XIadHlOiRHzfFq5_-EWBHSMQt5y6HHp80)/video/709/611/481116907_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C22P1.mp4" 
-    - ffmpeg -i "https://proxy-18.nyc.dailymotion.com/sec(2GAzbZ8__9P9i_IBM56mqCLstNq-Aw6u5bMMXnp7F2ARsJeWmlmEy0g0l-NLVoscfDB2zZfhkrWx4E4N3xxNmkZf_xBML9BXq7p_1mY_iu0)/video/809/611/481116908_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C22P2.mp4" 
+#    - ffmpeg -i "https://proxy-14.nyc.dailymotion.com/sec(4D9qlkTX-vRCFXZHYHjCmt4omoNMycneYxNrDzuokSfE1L71SAuG8YCpEHVTIvsrGyIiXrlVQ_Nj7f9S-5psnY-5VSjItu7umeLsdeCyCks)/video/067/411/481114760_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C21P1.mp4" 
+#    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(Ag2kWK5ZJFfHITwn7VOjZPreay0yqF9c1TZiP8jCa8efaaItj0uWOMSrRsAOXk3Pv66ZxxQCyCHBruh1_gMvBaTHb0U_dNqvHMt-KCIw_8I)/video/554/511/481115455_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C21P2.mp4" 
+#    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(I25uFPyvn48zyzIPUDuzDKXpwiOc4jNFeswZIV4yg9cwEoOGZCCii71FaZZXL72EowY3LLiL63XIadHlOiRHzfFq5_-EWBHSMQt5y6HHp80)/video/709/611/481116907_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C22P1.mp4" 
+#    - ffmpeg -i "https://proxy-18.nyc.dailymotion.com/sec(2GAzbZ8__9P9i_IBM56mqCLstNq-Aw6u5bMMXnp7F2ARsJeWmlmEy0g0l-NLVoscfDB2zZfhkrWx4E4N3xxNmkZf_xBML9BXq7p_1mY_iu0)/video/809/611/481116908_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C22P2.mp4" 
 #    - ffmpeg -i "" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "CP.mp4" 
 #
 #    ----------------Oshi Uploads--------------------
@@ -99,10 +102,16 @@ script:
 #    - curl --upload-file "C19P2.mp4" https://oshi.at/
 #    - curl --upload-file "C20P1.mp4" https://oshi.at/
 #    - curl --upload-file "C20P2.mp4" https://oshi.at/
-    - curl --upload-file "C21P1.mp4" https://oshi.at/
-    - curl --upload-file "C21P2.mp4" https://oshi.at/
-    - curl --upload-file "C22P1.mp4" https://oshi.at/
-    - curl --upload-file "C22P2.mp4" https://oshi.at/
+#    - curl --upload-file "C21P1.mp4" https://oshi.at/
+#    - curl --upload-file "C21P2.mp4" https://oshi.at/
+#    - curl --upload-file "C22P1.mp4" https://oshi.at/
+#    - curl --upload-file "C22P2.mp4" https://oshi.at/
+######################################################
+# FTP Uploads
+######################################################
+    - wget -i oshi.txt
+    - lftp -e "put C1P1.mp4;put C1P2.mp4;quit" -u JuanLiz,u44fre9v68  ftp.zplayer.live
+
 
 
 
