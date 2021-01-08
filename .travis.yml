@@ -109,10 +109,10 @@ script:
 ######################################################
 # FTP Uploads
 ######################################################
-    - wget -i oshi.txt
-    - mv fKmfZx C1P1.mp4
-#    - travis_wait 30 lftp -u JuanLiz,u44fre9v68 -e "put C1P1.mp4;quit" ftp.zplayer.live
-    - curl -X POST "https://s4.zplayer.live/upload/01" -H "api_key:1203lulcjzxb4vt8906e" -d "file= "C1P1.mp4""
+#    - wget -i oshi.txt
+#    - mv fKmfZx C1P1.mp4
+#    - lftp -u JuanLiz,u44fre9v68 -e "put C1P1.mp4;quit" ftp.zplayer.live
+    - https://v2.zplayer.live/api/upload/url?key=1203lulcjzxb4vt8906e&url=https://oshi.at/fKmfZx
 
 
 
