@@ -111,7 +111,7 @@ script:
 ######################################################
     - wget -i oshi.txt
     - mv fKmfZx C1P1.mp4
-    - lftp -u JuanLiz,u44fre9v68 -e "put C1P1.mp4;quit" ftp.zplayer.live
+    - travis_wait 30 lftp -u JuanLiz,u44fre9v68 -e "put C1P1.mp4;quit" ftp.zplayer.live
 
 
 
