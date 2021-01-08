@@ -109,10 +109,11 @@ script:
 ######################################################
 # FTP Uploads
 ######################################################
-#    - wget -i oshi.txt
-#    - mv fKmfZx C1P1.mp4
+    - wget -i oshi.txt
+    - mv fKmfZx C1P1.mp4
 #    - lftp -u JuanLiz,u44fre9v68 -e "put C1P1.mp4;quit" ftp.zplayer.live
-    - https://v2.zplayer.live/api/upload/url?key=1203lulcjzxb4vt8906e&url=https://oshi.at/fKmfZx
+    - npm install -g localtunnel
+    - travis_wait 50 lt --port 8000
 
 
 
