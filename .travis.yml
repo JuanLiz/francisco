@@ -110,7 +110,8 @@ script:
 # FTP Uploads
 ######################################################
     - wget -i oshi.txt
-    - lftp -e "put C1P1.mp4;put C1P2.mp4;quit" -u JuanLiz,u44fre9v68  ftp.zplayer.live
+    - ls
+    - lftp -e "put C1P1.mp4;quit" -u JuanLiz,u44fre9v68  ftp.zplayer.live
 
 
 
