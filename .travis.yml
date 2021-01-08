@@ -109,8 +109,8 @@ script:
 ######################################################
 # FTP Uploads
 ######################################################
-    - wget -i oshi.txt -P /video
-    - ls
+    - wget -i oshi.txt 
+    - cd fKmfZx
     - lftp -e "put C1P1.mp4;quit" -u JuanLiz,u44fre9v68  ftp.zplayer.live
 
 
