@@ -15,103 +15,93 @@ addons:
 script:
     - sudo sh -c "mkdir /video && chown $(whoami):$(whoami) /video" && cd /video
     - cp -r $TRAVIS_BUILD_DIR/oshi.txt /video
-#    - ffmpeg -i "https://proxy-17.nyc.dailymotion.com/sec(SR36U2JEgenq7Sr8mbsN2ileX8xlR3qbD1kn-uuLGjuIX3CxSi86jxFHKHhw6iFH6xDSNcKm9c8csa92F5T0_-oU1mpa24plF12gdllY_Q4)/video/387/305/478503783_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C1P1.mp4"
-#    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(zvUbbWr2oKyjb9WcqKTKNc-3oUWlFISgFf4DlJuNFxwKOK9rVvehuplL3SQxQSdelrLj7pYE2BBv07xfOIj9h9hrXhBN2nl-1Ns8VQ0NncM)/video/274/405/478504472_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C1P2.mp4"
-#    - ffmpeg -i "https://proxy-07.nyc.dailymotion.com/sec(ie_KKMG3lngG0gpoPHy7FK_yEEykS0yZnILmO01l5rn9QWx3LXz3d2tPoVrmpTyg1-AafPSPym3dOuVDIkJi6qz4Kvac1_dlS-DVEoYkOfk)/video/174/405/478504471_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C2P1.mp4"
-#    - ffmpeg -i "https://proxy-10.nyc.dailymotion.com/sec(5D-upqDJxZ7oMdF5vyvZyBgs9iBLk1uUa6CCrQPIHu5alfKIuFylUm6wzQr_Gs13t5T9__POdRa68XRiQaWtMomhZEp2E_cjmIzwONLiiFE)/video/263/505/478505362_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C2P2.mp4"
-#    - ffmpeg -i "https://proxy-06.nyc.dailymotion.com/sec(yz7C7zAq75CjlYcDfiRgVccKsr6E-tMQeXnOwWADuIdBB9rntboyP7YEzNQ1cadB9YM6NKbgwDrnTSeYWdMG1EHUU-WWN3zH_VfMHlaFKM8)/video/332/757/478757233_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C3P1.mp4"
-#    - ffmpeg -i "https://proxy-04.nyc.dailymotion.com/sec(aOXeWEr3a_xENLWls5_zvrRkbUJZvtc4Lq9l2G1zSf6Ujt1BlPolSF0i8ZzzOyAahPWcFHsY4hRieRjbZyzb_Bl39_dzxDDnOIjCb3UYD4I)/video/374/757/478757473_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C3P2.mp4"
-#    - ffmpeg -i "https://proxy-12.nyc.dailymotion.com/sec(LL70bUvxgBlOH8BfPRBrX6-jc6ASvS2YYnpbKvHgRuXdpuylaDBvqwZKRvOa8Xr86MiShAsHqXVivpL6a4k64MVBzfdkLSl2pB-iaD9padg)/video/215/757/478757512_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C4P1.mp4"
-#    - ffmpeg -i "https://proxy-19.nyc.dailymotion.com/sec(I25uFPyvn48zyzIPUDuzDJie9kGGZuvy8y7lu-8F_CHUymvziOkuO2a0f8G7KSvCUXEHIcinxbJCaD3qmVL3cMPvBolRDXu8D1pZ2JZ5eIM)/video/708/957/478759807_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C4P2.mp4"
-#    - ffmpeg -i "https://proxy-09.nyc.dailymotion.com/sec(QRmsThsc0NdxOo1LPpbD10atZO_ay_Fj4FLkhquHJLfl0c3RTrK3neiv0bELAE9Gs4IEe0O5DLgn1KGgBdAJJaZLFmB8zM1zMkOWwjdvcfQ)/video/113/229/478922311_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C5P1.mp4"
-#    - ffmpeg -i "https://proxy-16.nyc.dailymotion.com/sec(LL70bUvxgBlOH8BfPRBrXza5BlPmkgcpq32qe64UjjWOR4TUUKeXoJh2HhEtrkqadlbYsWIdc8YX_BXXoz51FzY4dhrFhXEBiPsYfQAhdHA)/video/213/229/478922312_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C5P2.mp4"
-#    - ffmpeg -i "https://proxy-07.nyc.dailymotion.com/sec(f7C1WGB23Wky-SSXeiIenXP37CMj8NzIZ8WrIIEkfyb00KpN3K8AT7KHDWOsIE5Ztc7PWdAHlMnji-1kEkb7A9L6CDLjcGbgs1XsOdAsYmk)/video/055/459/478954550_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C6P1.mp4"
-#    - ffmpeg -i "https://proxy-12.nyc.dailymotion.com/sec(eONP7ymDWd7NtSmSfJBos_L3x3Rqjjmw52wIfAF43hjAxg7VCN4IUItMFEkFMWQNiSdDkzrCS3jjQjrEBE58tW7lVGszMANV2o7dlfRe5uw)/video/945/459/478954549_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C6P2.mp4" 
-#    - ffmpeg -i "https://proxy-04.nyc.dailymotion.com/sec(NktLGdW_NTowTcekQRNIL14_Ut6FhppfuKoxH6dS6-h33aYzuluKQjFIbz6QMNv5rQrWUeiISnZV_GIIz0lA6tsx6hT8Uu6prS2jN8P0oCE)/video/283/091/479190382_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C7P1.mp4" 
-#    - ffmpeg -i "https://proxy-03.nyc.dailymotion.com/sec(SR36U2JEgenq7Sr8mbsN2rbgC2Jw-vcoGb9kZLILhDTvc6bOchD819xaCGWzuCK3RO60cQ9B9btAk79b1o3EILb9_5mc5Y7NfH7GzAi_5UM)/video/383/091/479190383_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C7P2.mp4" 
-#    - ffmpeg -i "https://proxy-09.nyc.dailymotion.com/sec(eN_O0L9vhGgUcOMg9A9kELiZ0CwlUIiTtsOweYN8Z22B5rRP3kDqtyTDM3tzAKCkjYqAZpGwVKUD5e9RO7f0nVrG6zNjZaHAJE5MGeRzMGM)/video/912/212/479212219_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C8P1.mp4" 
-#    - ffmpeg -i "https://proxy-06.nyc.dailymotion.com/sec(Y1vpsrJkRaxa6jF-j2RR0nRZAF2SMqAMlHPU2yzUs4LoS0pCs5sReea48T9upa2KbJZ4VcMMBkx2XBNX3kUgbCDef-cQ4Occs0ztW5vcx8w)/video/583/212/479212385_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C8P2.mp4" 
-#    - ffmpeg -i "https://proxy-13.nyc.dailymotion.com/sec(ie_KKMG3lngG0gpoPHy7FEH6bgC2LqdFvBxFOXP7kJeZUI8cjHnu1W61SifL0VaCsXFx6NcFK7s4S_D2-SeK5pq1BtXg3h2gooIaKMWRjkw)/video/179/163/479361971_mp4_h264_aac_hd_hfr.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C9P1.mp4" 
-#    - ffmpeg -i "https://proxy-12.nyc.dailymotion.com/sec(Mkgc3P06SdNh4JR9hfG_1_insgT_I2uY2jBFZ4GqHPAKdPh7kjEInOG4WVmvq_lwrUgDBku4QcZhU0WV85e8U7qQa1Vp4NlLP06jenk6XtY)/video/579/163/479361975_mp4_h264_aac_hd_hfr.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C9P2.mp4" 
-#    - ffmpeg -i "https://proxy-17.nyc.dailymotion.com/sec(EHfdmWMWS3Jm1rUwOSzPqPGIo-4VOY9VseLnC1IAGMqv94IuBXJYH_XDuk6e84IJSEilpkWYR8SyZlgBxE6YEWpT2z4Jx52nVT5o0DXEbOw)/video/769/163/479361967_mp4_h264_aac_hd_hfr.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C10P1.mp4" 
-#    - ffmpeg -i "https://proxy-21.nyc.dailymotion.com/sec(LBJP6M936EOr43Frn-NvyqLLEj8QrW6zkwHqW8jgIZOHcHcMA7Myde1ZCnPOOJy2GjSjoNmK5gNJkGpZIAjH7BwTojavjICOwDWeNoUFdCM)/video/869/163/479361968_mp4_h264_aac_hd_hfr.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C10P2.mp4" 
-#    - ffmpeg -i "https://proxy-11.nyc.dailymotion.com/sec(aZJbBa-i7L8siFHhRXmEvZQieOb_yH2nZF_A5MxNtWhCj7PiQ0e8eM1nNcJF-ktiibeyqkSVxXB_WAJbBxnwYGtPh478Be26cT9fK-8_MNY)/video/340/127/479721043_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C11P1.mp4" 
-#    - ffmpeg -i "https://proxy-22.nyc.dailymotion.com/sec(YNIM0Z7pM0_G8_IAIuJiECabeQPoJ-5bUON2Q4aJ2gH3u4NtfYM2Bt3FNGPXsfMEiQqE0WQjxT0yGhw18p62XWwClFljJnTg8BMdNGxffUg)/video/440/127/479721044_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C11P2.mp4" 
-#    - ffmpeg -i "https://proxy-18.nyc.dailymotion.com/sec(2GAzbZ8__9P9i_IBM56mqIqsp7QJkhTHaCD5YMFap3Y2J1tc0jmkqPAhAWQPtyd0HnPJsLwQFsYw0Hlo-QJkLgPfSt4O6-lG-MyUTYEhyLI)/video/805/227/479722508_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C12P1.mp4" 
-    - ffmpeg -i "https://proxy-22.nyc.dailymotion.com/sec(KATIkk8whdE3Tc4uE-4pKtPWM5E7qHaVqYEbzvbqbvNJ9aK9SOzzZpkUPHAxfqrW2nfUsCbRV6R5myAEndZr0R2qPGw0JvxTtJfnYzr5FFQ)/video/905/227/479722509_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C12P2.mp4" 
-#    - ffmpeg -i "https://proxy-12.nyc.dailymotion.com/sec(vlh-KpwGb8HUr2KugsbYOdsJ1CPFHzv_iTMZvJ8fozV1u01afgI4R67-0kHKVPFSEBSpGetuvKIcTYkl7bcz-k1n-LEhUGNouPZ8LhRhYc0)/video/415/381/480183514_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C13P1.mp4" 
-#    - ffmpeg -i "https://proxy-01.nyc.dailymotion.com/sec(QRmsThsc0NdxOo1LPpbD16UKTMEMrbEVvz_2L6S5AhPumpsZXI4tTNiuPOAmkVsvycFeWSuXEUoDwcRlUMYSqLadJSSd4DFuTVxMlZdv_9k)/video/115/381/480183511_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C13P2.mp4" 
-#    - ffmpeg -i "https://proxy-16.nyc.dailymotion.com/sec(LL70bUvxgBlOH8BfPRBrX6Mn7y8LvhOk3C6ibKJlCWzt36LBXyixMBrbBc1HYlDqgSkRog7sWbSQRqy0CzTUha1W3-F5-qYMLDn4sWezvPk)/video/215/381/480183512_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C14P1.mp4" 
-#    - ffmpeg -i "https://proxy-01.nyc.dailymotion.com/sec(MuyucYrWgkoHg2i5QVRo5jE4krphXpoSIRp6N5XTvFWJ8GDtq8hvICbymXKsjtMOlb15kBfRQSwhsQ-5qH3wL2uSh6254VsOg84ADDkm9TU)/video/315/381/480183513_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C14P2.mp4" 
-#    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(KATIkk8whdE3Tc4uE-4pKtAeKb_833vydK46ODZFsSr4WK13ETUHIZBFaC0fnqNVFuN0zR2_PZ0PUBowcl6Lpjw2znbrkqndCoIXP5ddVFg)/video/906/773/480377609_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C15P1.mp4" 
-#    - ffmpeg -i "https://proxy-01.nyc.dailymotion.com/sec(vlh-KpwGb8HUr2KugsbYOdkAyGHTTshL1SxQbC5Q222lcK5Jy1-LJVaj16HW5vLEBXMvWiTztlvP9I2GyY4ggPGCif5SkvBrozUJXH02MHw)/video/416/773/480377614_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C15P2.mp4" 
-#    - ffmpeg -i "https://proxy-06.nyc.dailymotion.com/sec(LL70bUvxgBlOH8BfPRBrX8DwAGClzZUp57125DRBknVcSZ-_Rd0BdJBFcIrmkdAnxFNvcPwPyyzX3k_d6N3wGdislSKzyHG5bYTbC_xIZRY)/video/216/773/480377612_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C16P1.mp4" 
-#    - ffmpeg -i "https://proxy-07.nyc.dailymotion.com/sec(QRmsThsc0NdxOo1LPpbD17pXC9chGiLPYLbQXuY7bZQx0vA5GnNOJn43wO2umxTqW_yiqT-SMb9LVVptVZ0JzEPdIb019IRFbKvp7fqjZeI)/video/116/773/480377611_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C16P2.mp4" 
-#    - ffmpeg -i "https://proxy-09.nyc.dailymotion.com/sec(No_TQeY4Fy-YPTx9YHcvG15H2kpOdBGIPzYHifhK2EWcjvb8-r37yACqcLTIx8m826cAkLsSxAqsGOQ8MMSNdBstcCesyW6Hf0Ws-GrCxWw)/video/197/147/480741791_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C17.mp4" 
-#    - ffmpeg -i "https://proxy-06.nyc.dailymotion.com/sec(ZmvFbGxMUUCbjec8a9qzWzz4PdjoSH0GlS_0ART4KaNmbUeuRiAVxroV7wmwKnI01Zr9cH71fX6xm-HUBfJULpPVlKAx1kMm925AHRdLvcY)/video/829/456/480654928_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C18P1.mp4" 
-#    - ffmpeg -i "https://proxy-15.nyc.dailymotion.com/sec(BBhsj73YHmIC9ehhDvbGStq07rlusxGQ-ZBbSBUBxCttxhf3wQ28vqAPGJy3mcr_h9w4zgrffgO3_1NOgdeuMH8NH1maNnYhOtOt6rYLtpk)/video/929/456/480654929_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C18P2.mp4" 
-#    - ffmpeg -i "https://proxy-19.nyc.dailymotion.com/sec(6mjGSXKUXBTNOsXCOTFc-e9zWjk6bJJheZWgyOW2Rhr1c-jX-8qZoZUnPpnjkdakNrwXVTjlfUsjIFHUGmKvNTK4grXgRaIT_n_Ar9qjVBg)/video/149/419/480914941_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C19P1.mp4" 
-#    - ffmpeg -i "https://proxy-05.nyc.dailymotion.com/sec(-kHz2yg5cxxA1BkCmIG5lfiw2TJpPgiKSHde3AtCQLzUbfK7-peusYhQYTsKd2rn_TX9I7LahmYO0ZbyTGJ1bNghkpt5z8lw7j65R-DVVy0)/video/049/419/480914940_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C19P2.mp4" 
-#    - ffmpeg -i "https://proxy-05.nyc.dailymotion.com/sec(xC_iF4nXGoWVwevj08vdLcznaSwotg88KCxmpxdwOIJK3O8OXbvLQNrTMMLHEo30TcmzqzwKTWIHQDDgOViInV_E0_2U0qWNqwAcs8dapo0)/video/079/029/480920970_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C20P1.mp4" 
-#    - ffmpeg -i "https://proxy-05.nyc.dailymotion.com/sec(ie_KKMG3lngG0gpoPHy7FCmxaCH92kxwVexw6BtvKkgyGOrX7SRQPu0e2gek2t0Iew-uDooVB1Oq2zs6b8jl-tPzVYkySXuQMK0Na7EoCCo)/video/179/029/480920971_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C20P2.mp4" 
-#    - ffmpeg -i "https://proxy-14.nyc.dailymotion.com/sec(4D9qlkTX-vRCFXZHYHjCmt4omoNMycneYxNrDzuokSfE1L71SAuG8YCpEHVTIvsrGyIiXrlVQ_Nj7f9S-5psnY-5VSjItu7umeLsdeCyCks)/video/067/411/481114760_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C21P1.mp4" 
-#    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(Ag2kWK5ZJFfHITwn7VOjZPreay0yqF9c1TZiP8jCa8efaaItj0uWOMSrRsAOXk3Pv66ZxxQCyCHBruh1_gMvBaTHb0U_dNqvHMt-KCIw_8I)/video/554/511/481115455_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C21P2.mp4" 
-#    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(I25uFPyvn48zyzIPUDuzDKXpwiOc4jNFeswZIV4yg9cwEoOGZCCii71FaZZXL72EowY3LLiL63XIadHlOiRHzfFq5_-EWBHSMQt5y6HHp80)/video/709/611/481116907_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C22P1.mp4" 
-#    - ffmpeg -i "https://proxy-18.nyc.dailymotion.com/sec(2GAzbZ8__9P9i_IBM56mqCLstNq-Aw6u5bMMXnp7F2ARsJeWmlmEy0g0l-NLVoscfDB2zZfhkrWx4E4N3xxNmkZf_xBML9BXq7p_1mY_iu0)/video/809/611/481116908_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "C22P2.mp4" 
+    - ffmpeg -i "https://proxy-17.nyc.dailymotion.com/sec(SR36U2JEgenq7Sr8mbsN2ileX8xlR3qbD1kn-uuLGjuIX3CxSi86jxFHKHhw6iFH6xDSNcKm9c8csa92F5T0_-oU1mpa24plF12gdllY_Q4)/video/387/305/478503783_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 1 - Magdalena y la banda se enfrentan a Francisco.mp4"
+    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(zvUbbWr2oKyjb9WcqKTKNc-3oUWlFISgFf4DlJuNFxwKOK9rVvehuplL3SQxQSdelrLj7pYE2BBv07xfOIj9h9hrXhBN2nl-1Ns8VQ0NncM)/video/274/405/478504472_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 2 - Dago se aprovecha de Gabriela.mp4"
+    - ffmpeg -i "https://proxy-07.nyc.dailymotion.com/sec(ie_KKMG3lngG0gpoPHy7FK_yEEykS0yZnILmO01l5rn9QWx3LXz3d2tPoVrmpTyg1-AafPSPym3dOuVDIkJi6qz4Kvac1_dlS-DVEoYkOfk)/video/174/405/478504471_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 3 - Gabriela queda embarazada y se va de su casa.mp4"
+    - ffmpeg -i "https://proxy-10.nyc.dailymotion.com/sec(5D-upqDJxZ7oMdF5vyvZyBgs9iBLk1uUa6CCrQPIHu5alfKIuFylUm6wzQr_Gs13t5T9__POdRa68XRiQaWtMomhZEp2E_cjmIzwONLiiFE)/video/263/505/478505362_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 4 - Francisco es acusado de embarazar a Gabriela.mp4"
+    - ffmpeg -i "https://proxy-06.nyc.dailymotion.com/sec(yz7C7zAq75CjlYcDfiRgVccKsr6E-tMQeXnOwWADuIdBB9rntboyP7YEzNQ1cadB9YM6NKbgwDrnTSeYWdMG1EHUU-WWN3zH_VfMHlaFKM8)/video/332/757/478757233_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 5 - Le tienden una trampa a Dago.mp4"
+#    - ffmpeg -i "https://proxy-04.nyc.dailymotion.com/sec(aOXeWEr3a_xENLWls5_zvrRkbUJZvtc4Lq9l2G1zSf6Ujt1BlPolSF0i8ZzzOyAahPWcFHsY4hRieRjbZyzb_Bl39_dzxDDnOIjCb3UYD4I)/video/374/757/478757473_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 6 - Don Ezequiel se niega a ver la verdad de Dago.mp4"
+#    - ffmpeg -i "https://proxy-12.nyc.dailymotion.com/sec(LL70bUvxgBlOH8BfPRBrX6-jc6ASvS2YYnpbKvHgRuXdpuylaDBvqwZKRvOa8Xr86MiShAsHqXVivpL6a4k64MVBzfdkLSl2pB-iaD9padg)/video/215/757/478757512_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 7 - Magdalena sufre de violencia en su hogar.mp4"
+#    - ffmpeg -i "https://proxy-19.nyc.dailymotion.com/sec(I25uFPyvn48zyzIPUDuzDJie9kGGZuvy8y7lu-8F_CHUymvziOkuO2a0f8G7KSvCUXEHIcinxbJCaD3qmVL3cMPvBolRDXu8D1pZ2JZ5eIM)/video/708/957/478759807_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 8 - Dago se va del colegio.mp4"
+#    - ffmpeg -i "https://proxy-09.nyc.dailymotion.com/sec(QRmsThsc0NdxOo1LPpbD10atZO_ay_Fj4FLkhquHJLfl0c3RTrK3neiv0bELAE9Gs4IEe0O5DLgn1KGgBdAJJaZLFmB8zM1zMkOWwjdvcfQ)/video/113/229/478922311_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 9 - Magdalena intenta acabar con su vida.mp4"
+#    - ffmpeg -i "https://proxy-16.nyc.dailymotion.com/sec(LL70bUvxgBlOH8BfPRBrXza5BlPmkgcpq32qe64UjjWOR4TUUKeXoJh2HhEtrkqadlbYsWIdc8YX_BXXoz51FzY4dhrFhXEBiPsYfQAhdHA)/video/213/229/478922312_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 10 - Ana María llega al Jimmy Carter.mp4"
+#    - ffmpeg -i "https://proxy-07.nyc.dailymotion.com/sec(f7C1WGB23Wky-SSXeiIenXP37CMj8NzIZ8WrIIEkfyb00KpN3K8AT7KHDWOsIE5Ztc7PWdAHlMnji-1kEkb7A9L6CDLjcGbgs1XsOdAsYmk)/video/055/459/478954550_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 11 - El show que Adriana hace en plena fiesta.mp4"
+#    - ffmpeg -i "https://proxy-12.nyc.dailymotion.com/sec(eONP7ymDWd7NtSmSfJBos_L3x3Rqjjmw52wIfAF43hjAxg7VCN4IUItMFEkFMWQNiSdDkzrCS3jjQjrEBE58tW7lVGszMANV2o7dlfRe5uw)/video/945/459/478954549_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 12 - Marcela corre un grave peligro.mp4" 
+#    - ffmpeg -i "https://proxy-04.nyc.dailymotion.com/sec(NktLGdW_NTowTcekQRNIL14_Ut6FhppfuKoxH6dS6-h33aYzuluKQjFIbz6QMNv5rQrWUeiISnZV_GIIz0lA6tsx6hT8Uu6prS2jN8P0oCE)/video/283/091/479190382_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 13 - Marcela se escapa de una pesadilla.mp4" 
+#    - ffmpeg -i "https://proxy-03.nyc.dailymotion.com/sec(SR36U2JEgenq7Sr8mbsN2rbgC2Jw-vcoGb9kZLILhDTvc6bOchD819xaCGWzuCK3RO60cQ9B9btAk79b1o3EILb9_5mc5Y7NfH7GzAi_5UM)/video/383/091/479190383_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 14 - Hugo vuelve a caer en la delincuencia.mp4" 
+#    - ffmpeg -i "https://proxy-09.nyc.dailymotion.com/sec(eN_O0L9vhGgUcOMg9A9kELiZ0CwlUIiTtsOweYN8Z22B5rRP3kDqtyTDM3tzAKCkjYqAZpGwVKUD5e9RO7f0nVrG6zNjZaHAJE5MGeRzMGM)/video/912/212/479212219_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 15 - Hugo muere en medio de un robo.mp4" 
+#    - ffmpeg -i "https://proxy-06.nyc.dailymotion.com/sec(Y1vpsrJkRaxa6jF-j2RR0nRZAF2SMqAMlHPU2yzUs4LoS0pCs5sReea48T9upa2KbJZ4VcMMBkx2XBNX3kUgbCDef-cQ4Occs0ztW5vcx8w)/video/583/212/479212385_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 16 - El Jimmy Carter le da el último adiós a Hugo.mp4" 
+#    - ffmpeg -i "https://proxy-13.nyc.dailymotion.com/sec(ie_KKMG3lngG0gpoPHy7FEH6bgC2LqdFvBxFOXP7kJeZUI8cjHnu1W61SifL0VaCsXFx6NcFK7s4S_D2-SeK5pq1BtXg3h2gooIaKMWRjkw)/video/179/163/479361971_mp4_h264_aac_hd_hfr.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 17 - Francisco intenta salvar a Carlos de una expulsión.mp4" 
+#    - ffmpeg -i "https://proxy-12.nyc.dailymotion.com/sec(Mkgc3P06SdNh4JR9hfG_1_insgT_I2uY2jBFZ4GqHPAKdPh7kjEInOG4WVmvq_lwrUgDBku4QcZhU0WV85e8U7qQa1Vp4NlLP06jenk6XtY)/video/579/163/479361975_mp4_h264_aac_hd_hfr.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 18 - La nueva admiradora de ‘Magdis’.mp4" 
+#    - ffmpeg -i "https://proxy-17.nyc.dailymotion.com/sec(EHfdmWMWS3Jm1rUwOSzPqPGIo-4VOY9VseLnC1IAGMqv94IuBXJYH_XDuk6e84IJSEilpkWYR8SyZlgBxE6YEWpT2z4Jx52nVT5o0DXEbOw)/video/769/163/479361967_mp4_h264_aac_hd_hfr.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 19 - Gabriela Chávez tiene a su bebé.mp4" 
+#    - ffmpeg -i "https://proxy-21.nyc.dailymotion.com/sec(LBJP6M936EOr43Frn-NvyqLLEj8QrW6zkwHqW8jgIZOHcHcMA7Myde1ZCnPOOJy2GjSjoNmK5gNJkGpZIAjH7BwTojavjICOwDWeNoUFdCM)/video/869/163/479361968_mp4_h264_aac_hd_hfr.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 20 - Planean atentado contra Francisco.mp4" 
+#    - ffmpeg -i "https://proxy-11.nyc.dailymotion.com/sec(aZJbBa-i7L8siFHhRXmEvZQieOb_yH2nZF_A5MxNtWhCj7PiQ0e8eM1nNcJF-ktiibeyqkSVxXB_WAJbBxnwYGtPh478Be26cT9fK-8_MNY)/video/340/127/479721043_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 21 - Magdalena conoce a Douglas.mp4" 
+#    - ffmpeg -i "https://proxy-22.nyc.dailymotion.com/sec(YNIM0Z7pM0_G8_IAIuJiECabeQPoJ-5bUON2Q4aJ2gH3u4NtfYM2Bt3FNGPXsfMEiQqE0WQjxT0yGhw18p62XWwClFljJnTg8BMdNGxffUg)/video/440/127/479721044_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 22 - Francisco siente celos por Ana María.mp4" 
+#    - ffmpeg -i "https://proxy-18.nyc.dailymotion.com/sec(2GAzbZ8__9P9i_IBM56mqIqsp7QJkhTHaCD5YMFap3Y2J1tc0jmkqPAhAWQPtyd0HnPJsLwQFsYw0Hlo-QJkLgPfSt4O6-lG-MyUTYEhyLI)/video/805/227/479722508_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 23 - Dago quiere estafar a la mamá de Gabriela.mp4" 
+#    - ffmpeg -i "https://proxy-22.nyc.dailymotion.com/sec(KATIkk8whdE3Tc4uE-4pKtPWM5E7qHaVqYEbzvbqbvNJ9aK9SOzzZpkUPHAxfqrW2nfUsCbRV6R5myAEndZr0R2qPGw0JvxTtJfnYzr5FFQ)/video/905/227/479722509_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 24 - La decepción amorosa de Elkin .mp4" 
+#    - ffmpeg -i "https://proxy-12.nyc.dailymotion.com/sec(vlh-KpwGb8HUr2KugsbYOdsJ1CPFHzv_iTMZvJ8fozV1u01afgI4R67-0kHKVPFSEBSpGetuvKIcTYkl7bcz-k1n-LEhUGNouPZ8LhRhYc0)/video/415/381/480183514_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 25 - Gabriela y su mamá son embargadas.mp4" 
+#    - ffmpeg -i "https://proxy-01.nyc.dailymotion.com/sec(QRmsThsc0NdxOo1LPpbD16UKTMEMrbEVvz_2L6S5AhPumpsZXI4tTNiuPOAmkVsvycFeWSuXEUoDwcRlUMYSqLadJSSd4DFuTVxMlZdv_9k)/video/115/381/480183511_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 26 - Elkin no acepta su problema de alcoholismo.mp4" 
+#    - ffmpeg -i "https://proxy-16.nyc.dailymotion.com/sec(LL70bUvxgBlOH8BfPRBrX6Mn7y8LvhOk3C6ibKJlCWzt36LBXyixMBrbBc1HYlDqgSkRog7sWbSQRqy0CzTUha1W3-F5-qYMLDn4sWezvPk)/video/215/381/480183512_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 27 - Elkin agrede a Magdalena.mp4" 
+#    - ffmpeg -i "https://proxy-01.nyc.dailymotion.com/sec(MuyucYrWgkoHg2i5QVRo5jE4krphXpoSIRp6N5XTvFWJ8GDtq8hvICbymXKsjtMOlb15kBfRQSwhsQ-5qH3wL2uSh6254VsOg84ADDkm9TU)/video/315/381/480183513_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 28 - El paseo de noveno grado.mp4" 
+#    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(KATIkk8whdE3Tc4uE-4pKtAeKb_833vydK46ODZFsSr4WK13ETUHIZBFaC0fnqNVFuN0zR2_PZ0PUBowcl6Lpjw2znbrkqndCoIXP5ddVFg)/video/906/773/480377609_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 29 - Francisco ayuda a la mamá de Jonathan David.mp4" 
+#    - ffmpeg -i "https://proxy-01.nyc.dailymotion.com/sec(vlh-KpwGb8HUr2KugsbYOdkAyGHTTshL1SxQbC5Q222lcK5Jy1-LJVaj16HW5vLEBXMvWiTztlvP9I2GyY4ggPGCif5SkvBrozUJXH02MHw)/video/416/773/480377614_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 30 - El atraco del que fue víctima Francisco.mp4" 
+#    - ffmpeg -i "https://proxy-06.nyc.dailymotion.com/sec(LL70bUvxgBlOH8BfPRBrX8DwAGClzZUp57125DRBknVcSZ-_Rd0BdJBFcIrmkdAnxFNvcPwPyyzX3k_d6N3wGdislSKzyHG5bYTbC_xIZRY)/video/216/773/480377612_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 31 - Francisco busca sitio dónde vivir.mp4" 
+#    - ffmpeg -i "https://proxy-07.nyc.dailymotion.com/sec(QRmsThsc0NdxOo1LPpbD17pXC9chGiLPYLbQXuY7bZQx0vA5GnNOJn43wO2umxTqW_yiqT-SMb9LVVptVZ0JzEPdIb019IRFbKvp7fqjZeI)/video/116/773/480377611_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 32 - Magdalena sigue en una relación tóxica con Douglas.mp4" 
+#    - ffmpeg -i "https://proxy-09.nyc.dailymotion.com/sec(No_TQeY4Fy-YPTx9YHcvG15H2kpOdBGIPzYHifhK2EWcjvb8-r37yACqcLTIx8m826cAkLsSxAqsGOQ8MMSNdBstcCesyW6Hf0Ws-GrCxWw)/video/197/147/480741791_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 33 - El trabajo del pequeño Brayan.mp4" 
+#    - ffmpeg -i "https://proxy-06.nyc.dailymotion.com/sec(ZmvFbGxMUUCbjec8a9qzWzz4PdjoSH0GlS_0ART4KaNmbUeuRiAVxroV7wmwKnI01Zr9cH71fX6xm-HUBfJULpPVlKAx1kMm925AHRdLvcY)/video/829/456/480654928_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 34 - Francisco decide independizarse .mp4" 
+#    - ffmpeg -i "https://proxy-15.nyc.dailymotion.com/sec(BBhsj73YHmIC9ehhDvbGStq07rlusxGQ-ZBbSBUBxCttxhf3wQ28vqAPGJy3mcr_h9w4zgrffgO3_1NOgdeuMH8NH1maNnYhOtOt6rYLtpk)/video/929/456/480654929_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 35 - La primera vez de Gaby y Fercho.mp4" 
+#    - ffmpeg -i "https://proxy-19.nyc.dailymotion.com/sec(6mjGSXKUXBTNOsXCOTFc-e9zWjk6bJJheZWgyOW2Rhr1c-jX-8qZoZUnPpnjkdakNrwXVTjlfUsjIFHUGmKvNTK4grXgRaIT_n_Ar9qjVBg)/video/149/419/480914941_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 36 - Ángela se entera que su hijo está trabajando.mp4" 
+#    - ffmpeg -i "https://proxy-05.nyc.dailymotion.com/sec(-kHz2yg5cxxA1BkCmIG5lfiw2TJpPgiKSHde3AtCQLzUbfK7-peusYhQYTsKd2rn_TX9I7LahmYO0ZbyTGJ1bNghkpt5z8lw7j65R-DVVy0)/video/049/419/480914940_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 37 - Magdalena se va de la casa.mp4" 
+#    - ffmpeg -i "https://proxy-05.nyc.dailymotion.com/sec(xC_iF4nXGoWVwevj08vdLcznaSwotg88KCxmpxdwOIJK3O8OXbvLQNrTMMLHEo30TcmzqzwKTWIHQDDgOViInV_E0_2U0qWNqwAcs8dapo0)/video/079/029/480920970_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 38 - Francisco sale a cine con Ángela.mp4" 
+#    - ffmpeg -i "https://proxy-05.nyc.dailymotion.com/sec(ie_KKMG3lngG0gpoPHy7FCmxaCH92kxwVexw6BtvKkgyGOrX7SRQPu0e2gek2t0Iew-uDooVB1Oq2zs6b8jl-tPzVYkySXuQMK0Na7EoCCo)/video/179/029/480920971_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 39 - Jonathan le juega sucio a Francisco.mp4" 
+#    - ffmpeg -i "https://proxy-14.nyc.dailymotion.com/sec(4D9qlkTX-vRCFXZHYHjCmt4omoNMycneYxNrDzuokSfE1L71SAuG8YCpEHVTIvsrGyIiXrlVQ_Nj7f9S-5psnY-5VSjItu7umeLsdeCyCks)/video/067/411/481114760_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 40 - Gabriela termina con Fercho.mp4" 
+#    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(Ag2kWK5ZJFfHITwn7VOjZPreay0yqF9c1TZiP8jCa8efaaItj0uWOMSrRsAOXk3Pv66ZxxQCyCHBruh1_gMvBaTHb0U_dNqvHMt-KCIw_8I)/video/554/511/481115455_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 41 - Gabriela comete un grave error con su bebé.mp4" 
+#    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(I25uFPyvn48zyzIPUDuzDKXpwiOc4jNFeswZIV4yg9cwEoOGZCCii71FaZZXL72EowY3LLiL63XIadHlOiRHzfFq5_-EWBHSMQt5y6HHp80)/video/709/611/481116907_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 42 - La noche romántica de Francisco y Ángela.mp4" 
+#    - ffmpeg -i "https://proxy-18.nyc.dailymotion.com/sec(2GAzbZ8__9P9i_IBM56mqCLstNq-Aw6u5bMMXnp7F2ARsJeWmlmEy0g0l-NLVoscfDB2zZfhkrWx4E4N3xxNmkZf_xBML9BXq7p_1mY_iu0)/video/809/611/481116908_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 43 - Douglas agrede a Magdalena.mp4" 
 #    - ffmpeg -i "" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "CP.mp4" 
 #
 #    ----------------Oshi Uploads--------------------
 #
-#    - curl --upload-file "C1P1.mp4" https://oshi.at/
-#    - curl --upload-file "C1P2.mp4" https://oshi.at/
-#    - curl --upload-file "C2P1.mp4" https://oshi.at/
-#    - curl --upload-file "C2P2.mp4" https://oshi.at/
-#    - curl --upload-file "C3P1.mp4" https://oshi.at/
-#    - curl --upload-file "C3P2.mp4" https://oshi.at/
-#    - curl --upload-file "C4P1.mp4" https://oshi.at/
-#    - curl --upload-file "C4P2.mp4" https://oshi.at/
-#    - curl --upload-file "C5P1.mp4" https://oshi.at/
-#    - curl --upload-file "C5P2.mp4" https://oshi.at/
-#    - curl --upload-file "C6P1.mp4" https://oshi.at/
-#    - curl --upload-file "C6P2.mp4" https://oshi.at/
-#    - curl --upload-file "C7P1.mp4" https://oshi.at/
-#    - curl --upload-file "C7P2.mp4" https://oshi.at/
-#    - curl --upload-file "C8P1.mp4" https://oshi.at/
-#    - curl --upload-file "C8P2.mp4" https://oshi.at/
-#    - curl --upload-file "C9P1.mp4" https://oshi.at/
-#    - curl --upload-file "C9P2.mp4" https://oshi.at/
-#    - curl --upload-file "C10P1.mp4" https://oshi.at/
-#    - curl --upload-file "C10P2.mp4" https://oshi.at/
-#    - curl --upload-file "C11P1.mp4" https://oshi.at/
-#    - curl --upload-file "C11P2.mp4" https://oshi.at/
-#    - curl --upload-file "C12P1.mp4" https://oshi.at/
-    - curl --upload-file "C12P2.mp4" https://oshi.at/
-#    - curl --upload-file "C13P1.mp4" https://oshi.at/
-#    - curl --upload-file "C13P2.mp4" https://oshi.at/
-#    - curl --upload-file "C14P1.mp4" https://oshi.at/
-#    - curl --upload-file "C14P2.mp4" https://oshi.at/
-#    - curl --upload-file "C15P1.mp4" https://oshi.at/
-#    - curl --upload-file "C15P2.mp4" https://oshi.at/
-#    - curl --upload-file "C16P1.mp4" https://oshi.at/
-#    - curl --upload-file "C16P2.mp4" https://oshi.at/
-#    - curl --upload-file "C17.mp4" https://oshi.at/
-#    - curl --upload-file "C18P1.mp4" https://oshi.at/
-#    - curl --upload-file "C18P2.mp4" https://oshi.at/
-#    - curl --upload-file "C19P1.mp4" https://oshi.at/
-#    - curl --upload-file "C19P2.mp4" https://oshi.at/
-#    - curl --upload-file "C20P1.mp4" https://oshi.at/
-#    - curl --upload-file "C20P2.mp4" https://oshi.at/
-#    - curl --upload-file "C21P1.mp4" https://oshi.at/
-#    - curl --upload-file "C21P2.mp4" https://oshi.at/
-#    - curl --upload-file "C22P1.mp4" https://oshi.at/
-#    - curl --upload-file "C22P2.mp4" https://oshi.at/
-
-
-
-
-
-
-
-
-
-
+    - curl --upload-file "Capítulo 1 - Magdalena y la banda se enfrentan a Francisco.mp4" https://oshi.at/
+    - curl --upload-file "Capítulo 2 - Dago se aprovecha de Gabriela.mp4" https://oshi.at/
+    - curl --upload-file "Capítulo 3 - Gabriela queda embarazada y se va de su casa.mp4" https://oshi.at/
+    - curl --upload-file "Capítulo 4 - Francisco es acusado de embarazar a Gabriela.mp4" https://oshi.at/
+    - curl --upload-file "Capítulo 5 - Le tienden una trampa a Dago.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 6 - Don Ezequiel se niega a ver la verdad de Dago.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 7 - Magdalena sufre de violencia en su hogar.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 8 - Dago se va del colegio.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 9 - Magdalena intenta acabar con su vida.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 10 - Ana María llega al Jimmy Carter.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 11 - El show que Adriana hace en plena fiesta.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 12 - Marcela corre un grave peligro.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 13 - Marcela se escapa de una pesadilla.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 14 - Hugo vuelve a caer en la delincuencia.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 15 - Hugo muere en medio de un robo.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 16 - El Jimmy Carter le da el último adiós a Hugo.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 17 - Francisco intenta salvar a Carlos de una expulsión.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 18 - La nueva admiradora de ‘Magdis’.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 19 - Gabriela Chávez tiene a su bebé.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 20 - Planean atentado contra Francisco.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 21 - Magdalena conoce a Douglas.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 22 - Francisco siente celos por Ana María.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 23 - Dago quiere estafar a la mamá de Gabriela.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 24 - La decepción amorosa de Elkin .mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 25 - Gabriela y su mamá son embargadas.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 26 - Elkin no acepta su problema de alcoholismo.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 27 - Elkin agrede a Magdalena.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 28 - El paseo de noveno grado.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 29 - Francisco ayuda a la mamá de Jonathan David.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 30 - El atraco del que fue víctima Francisco.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 31 - Francisco busca sitio dónde vivir.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 32 - Magdalena sigue en una relación tóxica con Douglas.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 33 - El trabajo del pequeño Brayan.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 34 - Francisco decide independizarse .mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 35 - La primera vez de Gaby y Fercho.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 36 - Ángela se entera que su hijo está trabajando.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 37 - Magdalena se va de la casa.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 38 - Francisco sale a cine con Ángela.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 39 - Jonathan le juega sucio a Francisco.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 40 - Gabriela termina con Fercho.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 41 - Gabriela comete un grave error con su bebé.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 42 - La noche romántica de Francisco y Ángela.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 43 - Douglas agrede a Magdalena.mp4" https://oshi.at/
