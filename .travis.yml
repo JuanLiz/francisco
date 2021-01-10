@@ -71,20 +71,20 @@ script:
 #    - curl --upload-file "Capítulo 8 - Dago se va del colegio.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 9 - Magdalena intenta acabar con su vida.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 10 - Ana Maria llega al Jimmy Carter.mp4" https://oshi.at/
-    - curl --upload-file "Capítulo 11 - El show que Adriana hace en plena fiesta.mp4" https://oshi.at/
-    - curl --upload-file "Capítulo 12 - Marcela corre un grave peligro.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 11 - El show que Adriana hace en plena fiesta.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 12 - Marcela corre un grave peligro.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 13 - Marcela se escapa de una pesadilla.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 14 - Hugo vuelve a caer en la delincuencia.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 15 - Hugo muere en medio de un robo.mp4" https://oshi.at/
-    - curl --upload-file "Capítulo 16 - El Jimmy Carter le da el último adiós a Hugo.mp4" https://oshi.at/
-    - curl --upload-file "Capítulo 17 - Francisco intenta salvar a Carlos de una expulsión.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 16 - El Jimmy Carter le da el último adiós a Hugo.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 17 - Francisco intenta salvar a Carlos de una expulsión.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 18 - La nueva admiradora de ‘Magdis’.mp4" https://oshi.at/
-    - curl --upload-file "Capítulo 19 - Gabriela Chávez tiene a su bebé.mp4" https://oshi.at/
-#    - curl --upload-file "Capítulo 20 - Planean atentado contra Francisco.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 19 - Gabriela Chávez tiene a su bebé.mp4" https://oshi.at/
+    - curl --upload-file "Capítulo 20 - Planean atentado contra Francisco.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 21 - Magdalena conoce a Douglas.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 22 - Francisco siente celos por Ana Maria.mp4" https://oshi.at/
-#    - curl --upload-file "Capítulo 23 - Dago quiere estafar a la mamá de Gabriela.mp4" https://oshi.at/
-#    - curl --upload-file "Capítulo 24 - La decepción amorosa de Elkin .mp4" https://oshi.at/
+    - curl --upload-file "Capítulo 23 - Dago quiere estafar a la mamá de Gabriela.mp4" https://oshi.at/
+    - curl --upload-file "Capítulo 24 - La decepción amorosa de Elkin .mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 25 - Gabriela y su mamá son embargadas.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 26 - Elkin no acepta su problema de alcoholismo.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 27 - Elkin agrede a Magdalena.mp4" https://oshi.at/
