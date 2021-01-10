@@ -108,6 +108,6 @@ script:
 #    - curl --upload-file "Capítulo 41 - Gabriela comete un grave error con su bebé.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 42 - La noche romántica de Francisco y Ángela.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 43 - Douglas agrede a Magdalena.mp4" https://oshi.at/
-    - curl --upload-file "Capítulo 44 - Ángela enfrenta una difícil situación.mp4" https://oshi.at/
+    - curl https://oshi.at -F f=@Capítulo 44 - Ángela enfrenta una difícil situación.mp4 
 #    - curl --upload-file "Capítulo 45 - Magdalena se desmaya en plena presentación.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo XX - " https://oshi.at/
