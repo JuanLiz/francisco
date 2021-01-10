@@ -57,6 +57,10 @@ script:
 #    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(Ag2kWK5ZJFfHITwn7VOjZPreay0yqF9c1TZiP8jCa8efaaItj0uWOMSrRsAOXk3Pv66ZxxQCyCHBruh1_gMvBUE-vWNWE2uF4e9-3GCUjD8)/video/554/511/481115455_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 41 - Gabriela comete un grave error con su bebé.mp4" 
 #    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(I25uFPyvn48zyzIPUDuzDKXpwiOc4jNFeswZIV4yg9cwEoOGZCCii71FaZZXL72EowY3LLiL63XIadHlOiRHzfFq5_-EWBHSMQt5y6HHp80)/video/709/611/481116907_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 42 - La noche romántica de Francisco y Ángela.mp4" 
 #    - ffmpeg -i "https://proxy-18.nyc.dailymotion.com/sec(2GAzbZ8__9P9i_IBM56mqCLstNq-Aw6u5bMMXnp7F2ARsJeWmlmEy0g0l-NLVoscfDB2zZfhkrWx4E4N3xxNmkZf_xBML9BXq7p_1mY_iu0)/video/809/611/481116908_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 43 - Douglas agrede a Magdalena.mp4" 
+    - ffmpeg -i "https://proxy-19.nyc.dailymotion.com/sec(eONP7ymDWd7NtSmSfJBos-cxHob6vyE5YmqjVsNln_nDUY3CkTwy1cgAD_yJTrXFExDOVElJ-bbPSHRO9JtwF-rkDB5bU0o6EARuO5nvP2A)/video/942/543/481345249_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 44 - Ángela enfrenta una difícil situación.mp4" 
+#    - ffmpeg -i "https://proxy-14.nyc.dailymotion.com/sec(iAXo1UrOAO1i5LjM3lZ0hgebR_265AsBveIgslitJedggawHiY4unQD52BsU3a4QWeCTHIrrFWcY9mGdhOP0h8kmiBNhgyAkZwu0yxoFIuI)/video/352/543/481345253_mp4_h264_aac_hq.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "Capítulo 45 - Magdalena se desmaya en plena presentación.mp4" 
+#    - ffmpeg -i "" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "CxPx.mp4" 
+#    - ffmpeg -i "" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "CxPx.mp4" 
 #    - ffmpeg -i "" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "CxPx.mp4" 
 #
 #    ----------------Oshi Uploads--------------------
@@ -80,11 +84,11 @@ script:
 #    - curl --upload-file "Capítulo 17 - Francisco intenta salvar a Carlos de una expulsión.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 18 - La nueva admiradora de ‘Magdis’.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 19 - Gabriela Chávez tiene a su bebé.mp4" https://oshi.at/
-    - curl --upload-file "Capítulo 20 - Planean atentado contra Francisco.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 20 - Planean atentado contra Francisco.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 21 - Magdalena conoce a Douglas.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 22 - Francisco siente celos por Ana Maria.mp4" https://oshi.at/
-    - curl --upload-file "Capítulo 23 - Dago quiere estafar a la mamá de Gabriela.mp4" https://oshi.at/
-    - curl --upload-file "Capítulo 24 - La decepción amorosa de Elkin .mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 23 - Dago quiere estafar a la mamá de Gabriela.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 24 - La decepción amorosa de Elkin .mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 25 - Gabriela y su mamá son embargadas.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 26 - Elkin no acepta su problema de alcoholismo.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 27 - Elkin agrede a Magdalena.mp4" https://oshi.at/
@@ -104,3 +108,6 @@ script:
 #    - curl --upload-file "Capítulo 41 - Gabriela comete un grave error con su bebé.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 42 - La noche romántica de Francisco y Ángela.mp4" https://oshi.at/
 #    - curl --upload-file "Capítulo 43 - Douglas agrede a Magdalena.mp4" https://oshi.at/
+    - curl --upload-file "Capítulo 44 - Ángela enfrenta una difícil situación.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo 45 - Magdalena se desmaya en plena presentación.mp4" https://oshi.at/
+#    - curl --upload-file "Capítulo XX - " https://oshi.at/
