@@ -17,7 +17,9 @@ script:
     - sudo sh -c "mkdir /video && chown $(whoami):$(whoami) /video" && cd /video
     - C44=Capitulo_44_-_Angela_enfrenta_una_dificil_situacion.mp4
     - C45=Capitulo_45_-_Magdalena_se_desmaya_en_plena_presentacion.mp4
+#    - CXX=XXXXXXXXXXXX
     - ffmpeg -i "https://proxy-19.nyc.dailymotion.com/sec(eONP7ymDWd7NtSmSfJBos-cxHob6vyE5YmqjVsNln_nDUY3CkTwy1cgAD_yJTrXFExDOVElJ-bbPSHRO9JtwF-rkDB5bU0o6EARuO5nvP2A)/video/942/543/481345249_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C44" 
     - ffmpeg -i "https://proxy-14.nyc.dailymotion.com/sec(iAXo1UrOAO1i5LjM3lZ0hgebR_265AsBveIgslitJecCgExHGXSNMx9moCV0DlSjcQ83j4Okfriy4lAygOg4wcYUpmFo7wBWoYkvIRsnv2M)/video/352/543/481345253_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C45" 
+#    - ffmpeg -i "" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$" 
     - curl --upload-file ./$C44 http://transfer.sh/
     - curl --upload-file ./$C45 http://transfer.sh/
