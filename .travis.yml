@@ -9,17 +9,15 @@ addons:
     packages:
     - curl
     - ffmpeg
-    - lftp
-    - sed
     - wget
     
 script:
     - sudo sh -c "mkdir /video && chown $(whoami):$(whoami) /video" && cd /video
-    - C44=Capitulo_44_-_Angela_enfrenta_una_dificil_situacion.mp4
-    - C45=Capitulo_45_-_Magdalena_se_desmaya_en_plena_presentacion.mp4
+    - C46=Capitulo_46_-_Juan_le_ofrece_disculpas_a_Ana_Maria.mp4
+    - C47=Capitulo_47_-_Magdalena_teme_por_su_vida.mp4
 #    - CXX=XXXXXXXXXXXX
-    - ffmpeg -i "https://proxy-19.nyc.dailymotion.com/sec(eONP7ymDWd7NtSmSfJBos-cxHob6vyE5YmqjVsNln_nDUY3CkTwy1cgAD_yJTrXFExDOVElJ-bbPSHRO9JtwF-rkDB5bU0o6EARuO5nvP2A)/video/942/543/481345249_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C44" 
-    - ffmpeg -i "https://proxy-14.nyc.dailymotion.com/sec(iAXo1UrOAO1i5LjM3lZ0hgebR_265AsBveIgslitJecCgExHGXSNMx9moCV0DlSjcQ83j4Okfriy4lAygOg4wcYUpmFo7wBWoYkvIRsnv2M)/video/352/543/481345253_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C45" 
+     - ffmpeg -i "https://proxy-01.nyc.dailymotion.com/sec(F2xm4AE_MJz4XuMt-sLSYaWo1Tcom39tXadEPwW49aRplR6F22gD_DnDuXwWsJXhp2M38o3--8hK0DwpBA1yJYNZ01sPxUogkmJ0GX0Y2Bk)/video/842/543/481345248_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C46" 
+    - ffmpeg -i "https://proxy-20.nyc.dailymotion.com/sec(wei31X4-J0DHtJ8pD26Ewyj_5vwBpCVOI7-GkSGrLcj3NM0f5dfmBFp9Zazrpz5-xxi5i3Pn_BGz1d4nyy-c2oNeb-1Rrgj06CzcjWXXvF4)/video/252/543/481345252_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C47" 
 #    - ffmpeg -i "" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$" 
-    - curl --upload-file ./$C44 http://transfer.sh/
-    - curl --upload-file ./$C45 http://transfer.sh/
+    - curl --upload-file ./$C46 http://transfer.sh/
+    - curl --upload-file ./$C47 http://transfer.sh/
