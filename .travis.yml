@@ -12,17 +12,17 @@ addons:
     
 script:
     - sudo sh -c "mkdir /video && chown $(whoami):$(whoami) /video" && cd /video
-    - C56=Capítulo_56_-_Gabriela_y_sus_amigos_trabajan_de_recreadores.mp4
-    - C57=Capítulo_57_-_Angela_decide_irse_con_su_familia.mp4
-    - C58=Capítulo_58_-_Brayan_se_va_de_la_casa.mp4
-    - C59=Capítulo_59_-_Sandra_cumple_años_extrañando_a_su_madre.mp4
+    - C60=Capítulo_60_-_Gabriela_le_propone_un_plan_para_separar_a_Fercho_de_Deisy.mp4
+    - C61=Capítulo_61_-_Fercho_le_hace_un_desplante_a_Gabriela.mp4
+    - C62=Capítulo_62_-_Angela_le_da_una_mala_noticia_a_Francisco.mp4
+    - C63=Capítulo_63_-_Gabriela_y_Deisy_se_enfrentan.mp4
 #    - CXX=XXXXXXXXXXXX
-    - ffmpeg -i "https://proxy-21.nyc.dailymotion.com/sec(jRUWpB4i4BTcBhaSBTsVm1AiwDkkp-B0Y7AW_EO1bt0-jUVX6f2TwnwxLQPd7V9lLpdE7eA_HDDVwthXNHIMD8kMm79hIMQARleL-f8mXiw)/video/599/240/482042995_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C56"
-    - ffmpeg -i "https://proxy-21.nyc.dailymotion.com/sec(jXl_r_CZ7rKteLo7P67RkP86dfT2tLqyzXriEJttmDwfp_zCzY1nFW9cXD7Uk-HT2atgLqjFlpH6qTMMlJfJRZGqu3Sx057-q94Xmpe66qE)/video/699/240/482042996_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C57"
-    - ffmpeg -i "https://proxy-09.nyc.dailymotion.com/sec(kQ-xm7K7XuJL2OOBtgtlOFUvzxMUkoY4yMftqj8MRc9enU6Mmegj2tEjuRg-HBd1BzPBTnUA_Yyu6j1ArCFk_OI0aUEN4ZQDpj0IYpVRd9M)/video/150/890/482098051_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C58"
-    - ffmpeg -i "https://proxy-05.nyc.dailymotion.com/sec(wei31X4-J0DHtJ8pD26Ew537cCj1nLeLZzRNphSuxgce3Z4rrBxLZAbfdWph4S3cWA88ycoc1-PyPNVH40yM6SlXuG2lQEYSCTf9WqjjOsE)/video/250/890/482098052_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C59"
+    - ffmpeg -i "https://proxy-13.nyc.dailymotion.com/sec(eN_O0L9vhGgUcOMg9A9kEAPNjC0U3A85S5ukp4UQv5q5jqEJktfEXGUaLqYc0p68viVslNL0YJ0pKJ9tWsp1uJ86YPuNFWHVaf8zUrDVp5E)/video/910/792/482297019_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C60"
+    - ffmpeg -i "https://proxy-17.nyc.dailymotion.com/sec(f2DpPaaM8u15Kq2lKySPGK_lbpYeaBd5upGHjCa6wK1wDLXZmfAF1x0oc3kXMQ3lfDtC5KafgMLfCL9HMSsT2ncz9YN7oIJ-YZdVQoobinY)/video/810/792/482297018_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C61"
+    - ffmpeg -i "https://proxy-09.nyc.dailymotion.com/sec(wIhAEtcGY0FlKmw_K5ItmWL9RZSQ2qjHtOvUjTd3C_bscoQPc0c9xBSfbQQDJBVi6vDC2ITS1jXbYWs5ERKKTXmqXP5qbYwcRlo1Vz6V4WA)/video/710/792/482297017_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C62"
+    - ffmpeg -i "https://proxy-06.nyc.dailymotion.com/sec(vO9SD42pxLpuBzh8FBnsbRByVPPxNCZm_zgH7nE2-YJbVTyD438Iq5x-u6lLtgJBmmw-TTG7elwFv77CAZoYnbvqzyDYtruQ1Cw4t5TsWLM)/video/610/792/482297016_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C63"
 #    - ffmpeg -i "" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$" 
-    - curl --upload-file ./$C56 http://transfer.sh/
-    - curl --upload-file ./$C57 http://transfer.sh/
-    - curl --upload-file ./$C58 http://transfer.sh/
-    - curl --upload-file ./$C59 http://transfer.sh/
+    - curl --upload-file ./$C60 http://transfer.sh/
+    - curl --upload-file ./$C61 http://transfer.sh/
+    - curl --upload-file ./$C62 http://transfer.sh/
+    - curl --upload-file ./$C63 http://transfer.sh/
