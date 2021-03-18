@@ -12,63 +12,63 @@ addons:
     
 script:
     - sudo sh -c "mkdir /video && chown $(whoami):$(whoami) /video" && cd /video
-    - C64=Capitulo_64_-_Llega_la_historia_de_Tatiana_y_su_familia.mp4
-    - C65=Capitulo_65_-_Don_Ezequiel_sabotea_el_romance_de_Clarita.mp4
-    - C66=Capitulo_66_-_Tatiana_llega_al_Jimmy_Carter.mp4
-    - C67=Capitulo_67_-_Gabriela_se_une_con_sus_compañeras_contra_Tatiana.mp4
-    - C68=Capitulo_68_-_Llega_el_atractivo_profesor_de_artes.mp4
-    - C69=Capitulo_69_-_Las_niñas_hacen_un_pacto_para_conquistar_a_Chacho.mp4
-    - C70=Capitulo_70_-_Francisco_le_propone_matrimonio_a_Angela.mp4
-    - C71=Capitulo_71_-_Tras_tener_la_aprobacion_de_sus_hijos_Angela_da_el_si.mp4
-#    - C72=Capitulo_72_-_Ana_Maria_confronta_a_Francisco.mp4
-#    - C73=Capitulo_73_-_¿Clarita_se_casa_con_Don_Ezequiel?.mp4
-#    - C74=Capitulo_74_-_Una_boda_que_termina_en_batalla.mp4
-#    - C75=Capitulo_75_-_Francisco_intenta_erradicar_la_violencia_de_sus_alumnos.mp4
-#    - C76=Capitulo_76_-_Francisco_se_va_de_casa_de_Angela.mp4
-#    - C77=Capitulo_77_-_Tatiana_explota_frente_a_sus_compañeros.mp4
-#    - C78=Capitulo_78_-_Tatiana_no_aparece_y_genera_preocupacion.mp4
-#    - C79=Capitulo_79_-_Magdalena_y_Tatiana_hacen_un_pacto_de_no_agresion..mp4
+#    - C64=Capitulo_64_-_Llega_la_historia_de_Tatiana_y_su_familia.mp4
+#    - C65=Capitulo_65_-_Don_Ezequiel_sabotea_el_romance_de_Clarita.mp4
+#    - C66=Capitulo_66_-_Tatiana_llega_al_Jimmy_Carter.mp4
+#    - C67=Capitulo_67_-_Gabriela_se_une_con_sus_compañeras_contra_Tatiana.mp4
+#    - C68=Capitulo_68_-_Llega_el_atractivo_profesor_de_artes.mp4
+#    - C69=Capitulo_69_-_Las_niñas_hacen_un_pacto_para_conquistar_a_Chacho.mp4
+#    - C70=Capitulo_70_-_Francisco_le_propone_matrimonio_a_Angela.mp4
+#    - C71=Capitulo_71_-_Tras_tener_la_aprobacion_de_sus_hijos_Angela_da_el_si.mp4
+    - C72=Capitulo_72_-_Ana_Maria_confronta_a_Francisco.mp4
+    - C73=Capitulo_73_-_¿Clarita_se_casa_con_Don_Ezequiel?.mp4
+    - C74=Capitulo_74_-_Una_boda_que_termina_en_batalla.mp4
+    - C75=Capitulo_75_-_Francisco_intenta_erradicar_la_violencia_de_sus_alumnos.mp4
+    - C76=Capitulo_76_-_Francisco_se_va_de_casa_de_Angela.mp4
+    - C77=Capitulo_77_-_Tatiana_explota_frente_a_sus_compañeros.mp4
+    - C78=Capitulo_78_-_Tatiana_no_aparece_y_genera_preocupacion.mp4
+    - C79=Capitulo_79_-_Magdalena_y_Tatiana_hacen_un_pacto_de_no_agresion..mp4
 #    - C80=Capitulo_80_-_Tatiana_le_pide_un_gran_favor_a_Magdalena.mp4
 #    - C81=Capitulo_81_-_Magdalena_conoce_a_un_apuesto_joven.mp4
 #    - C82=Capitulo_82_-_Angela_se_entera_de_su_embarazo.mp4
 #    - CXX=XXXXXXXXXXXX
-    - ffmpeg -i "https://proxy-09.nyc.dailymotion.com/sec(zvUbbWr2oKyjb9WcqKTKNfyxLnAtsrktWk1t2ujvaOHmkHDrO80s-VP_KRyV0kKlbVArVN56EKj9i_RFlHT7I16CYmf9zsw7lI4NtxvoO3A)/video/278/075/482570872_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C64"
-    - ffmpeg -i "https://proxy-15.nyc.dailymotion.com/sec(ze_zdAyquuHZoAqFx0DMT0qFvlfFRkweQPFCO1TZVczl5oWJ8NVKGzz5u5FQXDh8N__Wu8GAzFeHYjJjwiVx576ZIsGaz0xMtkGMWnwfETs)/video/478/075/482570874_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C65"
-    - ffmpeg -i "https://proxy-01.nyc.dailymotion.com/sec(uI0lmEyiuZevWtjRWMybVewvsoyPBLmbJz3PIyNlXF_ybuFVf3CIc1wmaC7Pf4o1UVizzA1OpeFo0h0ZykrBvsJnKp1IrTt0Y3NlH9b6-vg)/video/985/845/482548589_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C66"
-    - ffmpeg -i "https://proxy-11.nyc.dailymotion.com/sec(No_TQeY4Fy-YPTx9YHcvG9VXuwUT6QSbKy9DWQkOy7-f19mM5z-UE1vJxLytB1Tpl4_02NXvVf_-SK3mYOISPAv2O7g4Wsb8H74bsQXkxHE)/video/195/845/482548591_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C67"
-    - ffmpeg -i "https://proxy-20.nyc.dailymotion.com/sec(wei31X4-J0DHtJ8pD26Ew28jXHJUqNU-_asi_oC3G9caAj39QMe0pipJ-0mh6EGfIaHQRULk3BKxLebT4BFRHPe2CQTsQEF4JX4XtLjwLxU)/video/257/387/482783752_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C68"
-    - ffmpeg -i "https://proxy-10.nyc.dailymotion.com/sec(iAXo1UrOAO1i5LjM3lZ0hg6Rl738Mo4xMJ2N63X-lTLqRUJC0PDppEpqk2krMMHGbEL9giFCm8FmREWio9M5N5XNMEFNRVZij_02-Qw5sLk)/video/357/387/482783753_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C69"
-    - ffmpeg -i "https://proxy-02.nyc.dailymotion.com/sec(x7QhsFQT25E0iGMBVv6oUAOs_cL3xn1DiqOyXermlaO7AuzG4pw3vEZ8ma8QZQSiZOTLCA58g4orgZmCG19QcJdDO5S0tbN--eIioyufPxY)/video/457/387/482783754_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C70"
-    - ffmpeg -i "https://proxy-05.nyc.dailymotion.com/sec(Ag2kWK5ZJFfHITwn7VOjZOzFtwZ15HpM19rwAJmI_3I-TZAx8mCt5VUvn-yJpl4XLFQn3-mozS27XoufPMY4GQrZIHXkeZRuRWRNlwf0Uq8)/video/557/387/482783755_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C71"
-#    - ffmpeg -i "https://proxy-20.nyc.dailymotion.com/sec(2GAzbZ8__9P9i_IBM56mqBTsgVMMwT6BiBj9UaVbxH1TWd8K8B9enKtSZGHBkZttRctWcbbBeJw5GRULYymVJVcPig7AeT4aczombwWN9Eg)/video/807/260/483062708_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C72"
-#    - ffmpeg -i "https://proxy-02.nyc.dailymotion.com/sec(4pkX4jyJ09RyW9jaEyekkur4xEEaN9UxhIJV1DnRhnXfsfrIzZkpe-wMpONd4XnmgQ9FbuLLEzjggVrSMD45t8UpS69uJ0ipGVVpDVWO_qU)/video/796/460/483064697_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C73"
-#    - ffmpeg -i "https://proxy-22.nyc.dailymotion.com/sec(aOXeWEr3a_xENLWls5_zvoMxwNcttaOVbYs1esRh6Mgd76CCA1C3yDBnHKRUpvU-zoCi-3YB8QeEyxY1fqKcnejJeuDPG4fz7Sycfk30jUs)/video/370/860/483068073_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C74"
-#    - ffmpeg -i "https://proxy-18.nyc.dailymotion.com/sec(jXl_r_CZ7rKteLo7P67RkHP0Wo4xNE3T6DP8Hx7Px8OwceNTlql9A2sINgsG2Vsr3tFQFni0eazrECC6-MnOcgVUnWZj0myHSJX9oM5TPVs)/video/696/460/483064696_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C75"
-#    - ffmpeg -i "https://proxy-02.nyc.dailymotion.com/sec(ZmvFbGxMUUCbjec8a9qzW5mb_1G5N8uLsfzKI00TGLNvnPvIGaDNw5cU6l6p4WYkniiL_jXc7MrlHsB2D8elyVCjMfGGku3ny2vmM90HPKU)/video/820/203/483302028_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C76"
-#    - ffmpeg -i "https://proxy-15.nyc.dailymotion.com/sec(BBhsj73YHmIC9ehhDvbGSpySMNdr0qqCiOSX4J0tmPPoJxj6HhRKGj5mqb3Y-opKFt-UDVb1799GHDUdkhx5fvvCb9tYLWEZ_xajUDUfLuQ)/video/920/203/483302029_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C77"
-#    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(EHfdmWMWS3Jm1rUwOSzPqPHkHOBRhmQUrhn8SoVIn1CR-bS0Cvnj__PKS20NALlskOmjzUrHZtIDn3OYn8ShepV1HfunZ_IH45reuDV4uXU)/video/763/303/483303367_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C78"
-#    - ffmpeg -i "https://proxy-14.nyc.dailymotion.com/sec(LBJP6M936EOr43Frn-NvyjRaCC0wfG9Ip4-bVqmjagvi2Is0DIC4JiENFwpNqB-VACp1vGuNLiWLGrE7iQweXYESCazqF7cudOrNJa3V3_4)/video/863/303/483303368_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C79"
+#    - ffmpeg -i "https://proxy-09.nyc.dailymotion.com/sec(zvUbbWr2oKyjb9WcqKTKNfyxLnAtsrktWk1t2ujvaOHmkHDrO80s-VP_KRyV0kKlbVArVN56EKj9i_RFlHT7I16CYmf9zsw7lI4NtxvoO3A)/video/278/075/482570872_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C64"
+#    - ffmpeg -i "https://proxy-15.nyc.dailymotion.com/sec(ze_zdAyquuHZoAqFx0DMT0qFvlfFRkweQPFCO1TZVczl5oWJ8NVKGzz5u5FQXDh8N__Wu8GAzFeHYjJjwiVx576ZIsGaz0xMtkGMWnwfETs)/video/478/075/482570874_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C65"
+#    - ffmpeg -i "https://proxy-01.nyc.dailymotion.com/sec(uI0lmEyiuZevWtjRWMybVewvsoyPBLmbJz3PIyNlXF_ybuFVf3CIc1wmaC7Pf4o1UVizzA1OpeFo0h0ZykrBvsJnKp1IrTt0Y3NlH9b6-vg)/video/985/845/482548589_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C66"
+#    - ffmpeg -i "https://proxy-11.nyc.dailymotion.com/sec(No_TQeY4Fy-YPTx9YHcvG9VXuwUT6QSbKy9DWQkOy7-f19mM5z-UE1vJxLytB1Tpl4_02NXvVf_-SK3mYOISPAv2O7g4Wsb8H74bsQXkxHE)/video/195/845/482548591_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C67"
+#    - ffmpeg -i "https://proxy-20.nyc.dailymotion.com/sec(wei31X4-J0DHtJ8pD26Ew28jXHJUqNU-_asi_oC3G9caAj39QMe0pipJ-0mh6EGfIaHQRULk3BKxLebT4BFRHPe2CQTsQEF4JX4XtLjwLxU)/video/257/387/482783752_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C68"
+#    - ffmpeg -i "https://proxy-10.nyc.dailymotion.com/sec(iAXo1UrOAO1i5LjM3lZ0hg6Rl738Mo4xMJ2N63X-lTLqRUJC0PDppEpqk2krMMHGbEL9giFCm8FmREWio9M5N5XNMEFNRVZij_02-Qw5sLk)/video/357/387/482783753_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C69"
+#    - ffmpeg -i "https://proxy-02.nyc.dailymotion.com/sec(x7QhsFQT25E0iGMBVv6oUAOs_cL3xn1DiqOyXermlaO7AuzG4pw3vEZ8ma8QZQSiZOTLCA58g4orgZmCG19QcJdDO5S0tbN--eIioyufPxY)/video/457/387/482783754_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C70"
+#    - ffmpeg -i "https://proxy-05.nyc.dailymotion.com/sec(Ag2kWK5ZJFfHITwn7VOjZOzFtwZ15HpM19rwAJmI_3I-TZAx8mCt5VUvn-yJpl4XLFQn3-mozS27XoufPMY4GQrZIHXkeZRuRWRNlwf0Uq8)/video/557/387/482783755_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C71"
+    - ffmpeg -i "https://proxy-20.nyc.dailymotion.com/sec(2GAzbZ8__9P9i_IBM56mqBTsgVMMwT6BiBj9UaVbxH1TWd8K8B9enKtSZGHBkZttRctWcbbBeJw5GRULYymVJVcPig7AeT4aczombwWN9Eg)/video/807/260/483062708_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C72"
+    - ffmpeg -i "https://proxy-02.nyc.dailymotion.com/sec(4pkX4jyJ09RyW9jaEyekkur4xEEaN9UxhIJV1DnRhnXfsfrIzZkpe-wMpONd4XnmgQ9FbuLLEzjggVrSMD45t8UpS69uJ0ipGVVpDVWO_qU)/video/796/460/483064697_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C73"
+    - ffmpeg -i "https://proxy-22.nyc.dailymotion.com/sec(aOXeWEr3a_xENLWls5_zvoMxwNcttaOVbYs1esRh6Mgd76CCA1C3yDBnHKRUpvU-zoCi-3YB8QeEyxY1fqKcnejJeuDPG4fz7Sycfk30jUs)/video/370/860/483068073_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C74"
+    - ffmpeg -i "https://proxy-18.nyc.dailymotion.com/sec(jXl_r_CZ7rKteLo7P67RkHP0Wo4xNE3T6DP8Hx7Px8OwceNTlql9A2sINgsG2Vsr3tFQFni0eazrECC6-MnOcgVUnWZj0myHSJX9oM5TPVs)/video/696/460/483064696_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C75"
+    - ffmpeg -i "https://proxy-02.nyc.dailymotion.com/sec(ZmvFbGxMUUCbjec8a9qzW5mb_1G5N8uLsfzKI00TGLNvnPvIGaDNw5cU6l6p4WYkniiL_jXc7MrlHsB2D8elyVCjMfGGku3ny2vmM90HPKU)/video/820/203/483302028_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C76"
+    - ffmpeg -i "https://proxy-15.nyc.dailymotion.com/sec(BBhsj73YHmIC9ehhDvbGSpySMNdr0qqCiOSX4J0tmPPoJxj6HhRKGj5mqb3Y-opKFt-UDVb1799GHDUdkhx5fvvCb9tYLWEZ_xajUDUfLuQ)/video/920/203/483302029_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C77"
+    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(EHfdmWMWS3Jm1rUwOSzPqPHkHOBRhmQUrhn8SoVIn1CR-bS0Cvnj__PKS20NALlskOmjzUrHZtIDn3OYn8ShepV1HfunZ_IH45reuDV4uXU)/video/763/303/483303367_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C78"
+    - ffmpeg -i "https://proxy-14.nyc.dailymotion.com/sec(LBJP6M936EOr43Frn-NvyjRaCC0wfG9Ip4-bVqmjagvi2Is0DIC4JiENFwpNqB-VACp1vGuNLiWLGrE7iQweXYESCazqF7cudOrNJa3V3_4)/video/863/303/483303368_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C79"
 #    - ffmpeg -i "https://proxy-16.nyc.dailymotion.com/sec(zBLo9_ZO9Yz5cZ8xnl9pTnbxv6SzVPwOYN5oLlk-czt-g8_B9R0kHUB4nJWZSqi2-RlfXwqOvCcV_cklH6GKUBY_ZIxjg_ILWS2JeZe16j4)/video/644/795/483597446_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C80"
 #    - ffmpeg -i "https://proxy-14.nyc.dailymotion.com/sec(eONP7ymDWd7NtSmSfJBos-FqHDhuD-_ZzQKbBJ8xxd8MHWD3kYPvvN61E3g_1gdAbau0HxfRXoSDGLTRlMs84gbrncryRyz2tnhdyDGxXRg)/video/944/795/483597449_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C81"
 #    - ffmpeg -i "https://proxy-20.nyc.dailymotion.com/sec(f7C1WGB23Wky-SSXeiIenUROdj1U9JqAJGe0nREP3RLNQd-NsGjX67LCT2WstNY_naZzjt01ePXp9Ti00yPQI8MNU56snWtYxBPeZUAubbM)/video/054/795/483597450_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C82"
 #    - ffmpeg -i "https://proxy-20.nyc.dailymotion.com/sec(7TR_qBFuZP9vaMKGWuhcZFUlNGUaT6AWoIeSylBxEipW5fGSi5I_xAhaiBImz80Wd1xX_gfZLLhMG4gEUw6Tohkzq4NN84drhtOdGHQJ2Sg)/video/544/795/483597445_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C83"
 #    - ffmpeg -i "" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$" 
-    - curl -T ./$C64 http://transfer.sh
-    - curl -T ./$C65 http://transfer.sh
-    - curl -T ./$C66 http://transfer.sh
-    - curl -T ./$C67 http://transfer.sh
-    - curl -T ./$C68 http://transfer.sh
-    - curl -T ./$C69 http://transfer.sh
-    - curl -T ./$C70 http://transfer.sh
-    - curl -T ./$C71 http://transfer.sh
-#    - curl -T ./$C72 http://transfer.sh
-#    - curl -T ./$C73 http://transfer.sh
-#    - curl -T ./$C74 http://transfer.sh
-#    - curl -T ./$C75 http://transfer.sh
-#    - curl -T ./$C76 http://transfer.sh
-#    - curl -T ./$C77 http://transfer.sh
-#    - curl -T ./$C78 http://transfer.sh
-#    - curl -T ./$C79 http://transfer.sh
+#    - curl -T ./$C64 http://transfer.sh
+#    - curl -T ./$C65 http://transfer.sh
+#    - curl -T ./$C66 http://transfer.sh
+#    - curl -T ./$C67 http://transfer.sh
+#    - curl -T ./$C68 http://transfer.sh
+#    - curl -T ./$C69 http://transfer.sh
+#    - curl -T ./$C70 http://transfer.sh
+#    - curl -T ./$C71 http://transfer.sh
+    - curl -T ./$C72 http://transfer.sh
+    - curl -T ./$C73 http://transfer.sh
+    - curl -T ./$C74 http://transfer.sh
+    - curl -T ./$C75 http://transfer.sh
+    - curl -T ./$C76 http://transfer.sh
+    - curl -T ./$C77 http://transfer.sh
+    - curl -T ./$C78 http://transfer.sh
+    - curl -T ./$C79 http://transfer.sh
 #    - curl -T ./$C80 http://transfer.sh
 #    - curl -T ./$C81 http://transfer.sh
 #    - curl -T ./$C82 http://transfer.sh
