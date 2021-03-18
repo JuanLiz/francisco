@@ -12,17 +12,41 @@ addons:
     
 script:
     - sudo sh -c "mkdir /video && chown $(whoami):$(whoami) /video" && cd /video
-    - C80=Capitulo_80_-_Tatiana_le_pide_un_gran_favor_a_Magdalena.mp4
-    - C81=Capitulo_81_-_Magdalena_conoce_a_un_apuesto_joven.mp4
-    - C82=Capitulo_82_-_Angela_se_entera_de_su_embarazo.mp4
-    - C83=Capitulo_83_-_Una_prueba_de_embarazo_genera_confusion.mp4
+    - C52=Capitulo_52_-_Francisco_es_el_rector_encargado_del_Jimmy_Carter.mp4
+    - C53=Capitulo_53_-_La_confusion_del_novio_de_Clarita.mp4
+    - C54=Capitulo_54_-_Don_Ezequiel_le_confiesa_amor_a_Clarita.mp4
+    - C55=Capitulo_55_-_La_despedida_de_soltera_de_Clarita.mp4
+    - C56=Capitulo_56_-_Gabriela_y_sus_amigos_trabajan_de_recreadores.mp4
+    - C57=Capitulo_57_-_Ángela_decide_irse_con_su_familia.mp4
+    - C58=Capitulo_58_-_Brayan_se_va_de_la_casa.mp4
+    - C59=Capitulo_59_-_Sandra_cumple_años_extrañando_a_su_madre.mp4
+    - C60=Capitulo_60_-_Gabriela_le_propone_un_plan_para_separar_a_Fercho_de_Deisy.mp4
+#    - C61=Capitulo_61_-_Fercho_le_hace_un_desplante_a_Gabriela.mp4
+#    - C62=Capitulo_62_-_Ángela_le_da_una_mala_noticia_a_Francisco.mp4
+#    - C63=Capitulo_63_-_Gabriela_y_Deisy_se_enfrentan.mp4
 #    - CXX=XXXXXXXXXXXX
-    - ffmpeg -i "https://proxy-16.nyc.dailymotion.com/sec(zBLo9_ZO9Yz5cZ8xnl9pTnbxv6SzVPwOYN5oLlk-czt-g8_B9R0kHUB4nJWZSqi2-RlfXwqOvCcV_cklH6GKUBY_ZIxjg_ILWS2JeZe16j4)/video/644/795/483597446_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C80"
-    - ffmpeg -i "https://proxy-14.nyc.dailymotion.com/sec(eONP7ymDWd7NtSmSfJBos-FqHDhuD-_ZzQKbBJ8xxd8MHWD3kYPvvN61E3g_1gdAbau0HxfRXoSDGLTRlMs84gbrncryRyz2tnhdyDGxXRg)/video/944/795/483597449_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C81"
-    - ffmpeg -i "https://proxy-20.nyc.dailymotion.com/sec(f7C1WGB23Wky-SSXeiIenUROdj1U9JqAJGe0nREP3RLNQd-NsGjX67LCT2WstNY_naZzjt01ePXp9Ti00yPQI8MNU56snWtYxBPeZUAubbM)/video/054/795/483597450_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C82"
-    - ffmpeg -i "https://proxy-20.nyc.dailymotion.com/sec(7TR_qBFuZP9vaMKGWuhcZFUlNGUaT6AWoIeSylBxEipW5fGSi5I_xAhaiBImz80Wd1xX_gfZLLhMG4gEUw6Tohkzq4NN84drhtOdGHQJ2Sg)/video/544/795/483597445_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C83"
+    - ffmpeg -i "https://proxy-12.nyc.dailymotion.com/sec(OOjjrkNT3EtIOgQ6bbrwrfHz88aDhDwFmeoEf8Hv_QSbg3vQ74I4TPvhWQyc9LoZpimx0YfFrEONhbir2cgdiv1LCMk1d5Jh_jyDlzs7SCQ)/video/363/867/481768363_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C52"
+    - ffmpeg -i "https://proxy-10.nyc.dailymotion.com/sec(6cs1aF-iA0EZ7u6cRrsFq5hFEUX5D0-4u8ZlSR-yTJAsQDMJaE1-EmiLC8vTM6A87H58EK26I77Vxt0CCeTLNsa0X-gdYxUSjhbxe-7CDv0)/video/463/867/481768364_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C53"
+    - ffmpeg -i "https://proxy-05.nyc.dailymotion.com/sec(vlh-KpwGb8HUr2KugsbYOXSfY2lNncIvJxdg50BQGjK8-wvSTmYTRAFD5JJmF9HGLCk3KSmnOg1BNVFXTBt_fWs2K6_YazkW7f-7l8TlPrY)/video/416/177/481771614_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C54"
+    - ffmpeg -i "https://proxy-04.nyc.dailymotion.com/sec(MuyucYrWgkoHg2i5QVRo5iTIPZ_uU6BcCE5x-IcVVZkI9e5tXzgrTEG_pv5F_a6A0QySh0Vr3u7yg2planJtb5C6uQULZ5saCuSDZFFzLC0)/video/316/177/481771613_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C55"
+    - ffmpeg -i "https://proxy-21.nyc.dailymotion.com/sec(jRUWpB4i4BTcBhaSBTsVm1AiwDkkp-B0Y7AW_EO1bt0-jUVX6f2TwnwxLQPd7V9lLpdE7eA_HDDVwthXNHIMDyxrR-rFae_21-AFfCBOB_Q)/video/599/240/482042995_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C56"
+    - ffmpeg -i "https://proxy-01.nyc.dailymotion.com/sec(jXl_r_CZ7rKteLo7P67RkP86dfT2tLqyzXriEJttmDwfp_zCzY1nFW9cXD7Uk-HT2atgLqjFlpH6qTMMlJfJRYWZuRcIMHGg-J6dRWWK5qU)/video/699/240/482042996_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C57"
+    - ffmpeg -i "https://proxy-12.nyc.dailymotion.com/sec(kQ-xm7K7XuJL2OOBtgtlOFUvzxMUkoY4yMftqj8MRc9enU6Mmegj2tEjuRg-HBd1BzPBTnUA_Yyu6j1ArCFk_HZ-1ifmuczmhz3hXj1LsAQ)/video/150/890/482098051_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C58"
+    - ffmpeg -i "https://proxy-05.nyc.dailymotion.com/sec(wei31X4-J0DHtJ8pD26Ew537cCj1nLeLZzRNphSuxgce3Z4rrBxLZAbfdWph4S3cWA88ycoc1-PyPNVH40yM6YJcEEYq_YlMbYzcFDgZTe8)/video/250/890/482098052_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C59"
+    - ffmpeg -i "https://proxy-13.nyc.dailymotion.com/sec(eN_O0L9vhGgUcOMg9A9kEAPNjC0U3A85S5ukp4UQv5q5jqEJktfEXGUaLqYc0p68viVslNL0YJ0pKJ9tWsp1uGZaVBsN7e5bULrel4Y937Q)/video/910/792/482297019_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C60"
+#    - ffmpeg -i "https://proxy-17.nyc.dailymotion.com/sec(f2DpPaaM8u15Kq2lKySPGK_lbpYeaBd5upGHjCa6wK1wDLXZmfAF1x0oc3kXMQ3lfDtC5KafgMLfCL9HMSsT2oNQvVyHHmVGo4AygD67PTI)/video/810/792/482297018_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C61"
+#    - ffmpeg -i "https://proxy-03.nyc.dailymotion.com/sec(wIhAEtcGY0FlKmw_K5ItmWL9RZSQ2qjHtOvUjTd3C_bscoQPc0c9xBSfbQQDJBVi6vDC2ITS1jXbYWs5ERKKTeAqg_idxIUDI6hdnB588Mk)/video/710/792/482297017_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C62"
+#    - ffmpeg -i "https://proxy-06.nyc.dailymotion.com/sec(vO9SD42pxLpuBzh8FBnsbRByVPPxNCZm_zgH7nE2-YJbVTyD438Iq5x-u6lLtgJBmmw-TTG7elwFv77CAZoYnbcr0v7_plTL8ZI4yJRF6-0)/video/610/792/482297016_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C63"
 #    - ffmpeg -i "" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$" 
-    - curl -T ./$C80 http://transfer.sh
-    - curl -T ./$C81 http://transfer.sh
-    - curl -T ./$C82 http://transfer.sh
-    - curl -T ./$C83 http://transfer.sh
+    - curl -T ./$C52 http://transfer.sh
+    - curl -T ./$C53 http://transfer.sh
+    - curl -T ./$C54 http://transfer.sh
+    - curl -T ./$C55 http://transfer.sh
+    - curl -T ./$C56 http://transfer.sh
+    - curl -T ./$C57 http://transfer.sh
+    - curl -T ./$C58 http://transfer.sh
+    - curl -T ./$C59 http://transfer.sh
+    - curl -T ./$C60 http://transfer.sh
+#    - curl -T ./$C61 http://transfer.sh
+#    - curl -T ./$C62 http://transfer.sh
+#    - curl -T ./$C63 http://transfer.sh
