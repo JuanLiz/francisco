@@ -1,25 +1,39 @@
 
 language: shell
 os: linux
-dist: bionic
+dist: focal
 
 
 addons:
   apt:
     packages:
-    - curl
     - ffmpeg
     
 script:
     - sudo sh -c "mkdir /video && chown $(whoami):$(whoami) /video" && cd /video
-    - C61=Capitulo_61_-_Fercho_le_hace_un_desplante_a_Gabriela.mp4
-    - C62=Capitulo_62_-_Ángela_le_da_una_mala_noticia_a_Francisco.mp4
-    - C63=Capitulo_63_-_Gabriela_y_Deisy_se_enfrentan.mp4
-#    - CXX=XXXXXXXXXXXX
-    - ffmpeg -i "https://proxy-17.nyc.dailymotion.com/sec(f2DpPaaM8u15Kq2lKySPGK_lbpYeaBd5upGHjCa6wK1wDLXZmfAF1x0oc3kXMQ3lfDtC5KafgMLfCL9HMSsT2oNQvVyHHmVGo4AygD67PTI)/video/810/792/482297018_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C61"
-    - ffmpeg -i "https://proxy-03.nyc.dailymotion.com/sec(wIhAEtcGY0FlKmw_K5ItmWL9RZSQ2qjHtOvUjTd3C_bscoQPc0c9xBSfbQQDJBVi6vDC2ITS1jXbYWs5ERKKTeAqg_idxIUDI6hdnB588Mk)/video/710/792/482297017_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C62"
-    - ffmpeg -i "https://proxy-06.nyc.dailymotion.com/sec(vO9SD42pxLpuBzh8FBnsbRByVPPxNCZm_zgH7nE2-YJbVTyD438Iq5x-u6lLtgJBmmw-TTG7elwFv77CAZoYnbcr0v7_plTL8ZI4yJRF6-0)/video/610/792/482297016_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$C63"
-#    - ffmpeg -i "" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 23 "$" 
-    - curl -T ./$C61 http://transfer.sh
-    - curl -T ./$C62 http://transfer.sh
-    - curl -T ./$C63 http://transfer.sh
+    - ffmpeg -i "https://proxy-14.nyc.dailymotion.com/sec(ehpNV9jmM-XDh5Y4selchkUdQD8rDjx4tFoXoH8ePmih4f-Ok5EjWK-p_QIK2s0W5oTr5fNX4hbJnxkzvzxKQI0QgLMQU3HWmu7h0HdqD28)/video/003/068/483860300_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_84_-_Tatiana_se_entera_que_Juan_Pablo_le_es_infiel.mp4"
+    - ffmpeg -i "https://proxy-14.nyc.dailymotion.com/sec(JhNEqfWhRAthJ1xop57lhsaPnrqQoAt1gkVJP9XTS_Ji_-FERRzQERNhYNOijksQ8fUibcsQMz4rEA_F5rYdhAUUiq0LivURP4Ans0gPjYA)/video/992/068/483860299_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_85_-_Deisy_cerca_de_caer_en_la_trampa.mp4"
+    - ffmpeg -i "https://proxy-14.sv4.dailymotion.com/sec(vO9SD42pxLpuBzh8FBnsbep-jfh03vFjWQgMdewsIGeT5YE1ra6eSOWKWC0fi1NpnCKQEuhPneZMX4YWBsAE45dqPW6hoWfeyMdOTXfyFH8)/video/610/168/483861016_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_86_-_Angela_le_cuenta_a_Francisco_que_esta_embarazada.mp4"
+    - ffmpeg -i "https://proxy-12.nyc.dailymotion.com/sec(gGqtclnn_bIC9m3nn5-WqGaanR_qgK9aCNfIy98RoTcPTmVwva3P8t5G5TaHWy8M2mKsNMdLq2X4lQGs9mKXPLak5yBqHbVB0Fo_7y6Zyvs)/video/510/168/483861015_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_87_-_Deisy_llega_a_Cali_engañada.mp4"
+    - ffmpeg -i "https://proxy-22.nyc.dailymotion.com/sec(4pkX4jyJ09RyW9jaEyekkubXe8Me4-zlu6oOW6PBwbbiP4rhd5iT9xSu4yN7mFuhB0mXLNRq9CVYgyuocT7ASIXdw_riaxXqAupDFYUyzD8)/video/797/490/484094797_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_88_-_Magdalena_esta_ilusionada_con_Ignacio.mp4"
+    - ffmpeg -i "https://proxy-030.dc3.dailymotion.com/sec(6KQ917mD1-x0Bqudp7rLfMEbMh1CZ9HKuf6oFLZrelUO33F3a-dGzsypR4J25qSJAMaKNiqy_tfZg1Bi3Izu8uc4Jlxta3b_6gG46uKPjaE)/video/897/490/484094798_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_89_-_Francisco_le_pide_a_Angela_tener_a_su_bebe.mp4"
+    - ffmpeg -i "https://proxy-015.dc3.dailymotion.com/sec(jRUWpB4i4BTcBhaSBTsVm6vUpS3AWXy7dWHbi_QzRy_Z-zS0SocaImMPz9YenHHyolVNHQBBv-jhpLM1_ZsYznEB40zqb_wnwaJAD9Kv4Wk)/video/597/490/484094795_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_90_-_Angela_pierde_el_bebe.mp4"
+    - ffmpeg -i "https://proxy-021.ix7.dailymotion.com/sec(wei31X4-J0DHtJ8pD26Eww9d-5BTXV3i77GWN4bmGUIytKKINlyWTbHqTDH1pfGukdlfw3djFOwBUZ0yIDeWXa2odV9RuPun1HprjeED48I)/video/258/362/484263852_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_91_-_El_Chacho_logro_llevar_a_su_casa_a_Marcela.mp4"
+    - ffmpeg -i "https://proxy-028.dc3.dailymotion.com/sec(MuyucYrWgkoHg2i5QVRo5uT0k7G94Zay1JX2brbwPLDPcs4I_Z_AYUXlEWJLMB5CxNW4_CYiBIgaWxi0cxtW4KJdmk8fOo5DCnG_nTxJlNk)/video/316/526/484625613_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_92_-_Francisco_aconseja_a_Deisy.mp4"
+    - ffmpeg -i "https://proxy-04.sv4.dailymotion.com/sec(H0vpOyVbcEs_XQ6KAJPaZhjy3pcJPdbWwf_QmX2iSmBVjU1pwdy7DG8Oe1spEntSLkxe48Cl8fOYhb2CGlzNyxk_-Maz8svWAgBvqJL-__A)/video/016/526/484625610_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_93_-_Angela_pone_en_peligro_su_salud.mp4"
+    - ffmpeg -i "https://proxy-009.ix7.dailymotion.com/sec(KATIkk8whdE3Tc4uE-4pKsteekQTizYcmdYA3-PANNrbaMEHbMevRYrM04wqjDrzKIoNWRdHQMCwgej_qZySrVz3dgJ8y1Yfuic67SARk38)/video/906/526/484625609_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_94_-_Deisy_engaña_a_sus_compañeras_de_colegio.mp4"
+    - ffmpeg -i "https://proxy-15.sv4.dailymotion.com/sec(I25uFPyvn48zyzIPUDuzDIfuyGKK4WsLlZpNCYdC9TttQLNE43n3Dx1GAbi9QQwhF7MHc8XlEXXUiGRTDatvy7yuCsbIrxIH_cJK1vs2Ryk)/video/706/526/484625607_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_95_-_Angela_termina_con_Francisco.mp4"
+
+#    - ffmpeg -i "" -bsf:a aac_adtstoasc -c copy -crf 23 "$" 
+    - curl -T ./Capitulo_84_-_Tatiana_se_entera_que_Juan_Pablo_le_es_infiel.mp4 http://transfer.sh
+    - curl -T ./Capitulo_85_-_Deisy_cerca_de_caer_en_la_trampa.mp4 http://transfer.sh
+    - curl -T ./Capitulo_86_-_Angela_le_cuenta_a_Francisco_que_esta_embarazada.mp4 http://transfer.sh
+    - curl -T ./Capitulo_87_-_Deisy_llega_a_Cali_engañada.mp4 http://transfer.sh
+    - curl -T ./Capitulo_88_-_Magdalena_esta_ilusionada_con_Ignacio.mp4 http://transfer.sh
+    - curl -T ./Capitulo_89_-_Francisco_le_pide_a_Angela_tener_a_su_bebe.mp4 http://transfer.sh
+    - curl -T ./Capitulo_90_-_Angela_pierde_el_bebe.mp4 http://transfer.sh
+    - curl -T ./Capitulo_91_-_El_Chacho_logro_llevar_a_su_casa_a_Marcela.mp4 http://transfer.sh
+    - curl -T ./Capitulo_92_-_Francisco_aconseja_a_Deisy.mp4 http://transfer.sh
+    - curl -T ./Capitulo_93_-_Angela_pone_en_peligro_su_salud.mp4 http://transfer.sh
+    - curl -T ./Capitulo_94_-_Deisy_engaña_a_sus_compañeras_de_colegio.mp4 http://transfer.sh
+    - curl -T ./Capitulo_95_-_Angela_termina_con_Francisco.mp4 http://transfer.sh
