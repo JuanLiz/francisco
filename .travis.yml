@@ -1,8 +1,6 @@
-
 language: shell
 os: linux
 dist: focal
-
 
 addons:
   apt:
@@ -11,26 +9,7 @@ addons:
     
 script:
     - sudo sh -c "mkdir /video && chown $(whoami):$(whoami) /video" && cd /video
-    - ffmpeg -i "https://proxy-18.nyc.dailymotion.com/sec(9bLpr36Elc3rqsMpQ_biPvyEZpjOV8yRPOheQTdKiKWKC_O-Kbc0mcJnlm5cEo-sxRtUsdIXXID2JF--j_dU75H2JUEQgVrrHlaAZQFXb8Y)/video/025/551/485155520_mp4_h264_aac_hd.m3u8"  -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_100_-_Deisy_esta_a_punto_de_viajar.mp4"
-    - ffmpeg -i "https://proxy-05.nyc.dailymotion.com/sec(x7QhsFQT25E0iGMBVv6oUOVFYwvUzXdy-6NDIzC4cKPoUuROQT5eKOnIFVe6D5ip7r2extTHfW2p49umSWqemx8BMsyvXOy2DWeV0q49HCI)/video/459/751/485157954_mp4_h264_aac_hd.m3u8"  -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_101_-_Marcela_se_va_de_la_casa.mp4"
-    - ffmpeg -i "https://proxy-17.nyc.dailymotion.com/sec(czTSNzcdT4mYlcYSkbvIQ-uKs1rp-vgHz1qcsTcTvG_ICYD1h0LyYjoY3p_tQhj0bUx1bTASMpvralOAGPDQ_5dkT8hOCJz3BujTQeVB-LA)/video/602/461/485164206_mp4_h264_aac_hd.m3u8"  -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_102_-_Tatiana_defiende_a_Fercho_de_su_padre.mp4"
-    - ffmpeg -i "https://proxy-06.nyc.dailymotion.com/sec(I25uFPyvn48zyzIPUDuzDBL3t_7la_tTVXc9ZOmSV7gVqqFbU-_zqq7CEJAP5O1kwFSjvoy72LytqxTbuDmz55j36B4LA4CowNENIpS7t48)/video/702/461/485164207_mp4_h264_aac_hd.m3u8"  -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_103_-_Deisy_es_detenida_en_el_aeropuerto.mp4"
-    - ffmpeg -i "https://proxy-07.nyc.dailymotion.com/sec(6KQ917mD1-x0Bqudp7rLfMEO-IRuv7AR_KIn59OlhJPFH9fUPoGwXuBvlL-xr7hNtWv59ZrPRCsuu0v4tiN3C6RJx67LTF7auo1Ik_OO-0c)/video/896/044/485440698_mp4_h264_aac_hd.m3u8"  -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_104_-_Ignacio_se_reconcilia_con_Magdalena.mp4"
-    - ffmpeg -i "https://proxy-15.nyc.dailymotion.com/sec(JhNEqfWhRAthJ1xop57lhiJyFguiahc6t47Q99WOLSMviS6H411RSGW7700OnMoXvKDyEy3RgBtb6KhhSQe4GJUPHP5bZ9N2CKgTHt8QfcU)/video/996/044/485440699_mp4_h264_aac_hd.m3u8"  -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_105_-_Francisco_se_entera_de_la_relación_de_Marcela_y_Chacho.mp4"
-    - ffmpeg -i "https://proxy-03.nyc.dailymotion.com/sec(6nm4zlNbCOiZp0vrc3SGaanSRUoKu9WLzvt0V6RCQ5QkENgUxCycXdc3R5ZvdkCmaI2L5Ap5mVvFJ6SypZqMRb79kzDoBgSN3pXVAtbczlE)/video/525/454/485454525_mp4_h264_aac_hd.m3u8"  -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_106_-_Magdalena_no_quiere_despedirse_de_Ignacio.mp4"
-    - ffmpeg -i "https://proxy-09.nyc.dailymotion.com/sec(EmIm9qZ57xxVtk2oHDZgShM5oehyU4VUhNzq5hz1G9E2Ma98cfH6776dyiUqyeYXeCFYyRDKXrhv99-P3FIFVOO_FLmHvRcL3q8WDdQANqI)/video/725/454/485454527_mp4_h264_aac_hd.m3u8"  -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_107_-_Duras_elecciones_llegan_a_esta_historia.mp4"
-    - ffmpeg -i "https://proxy-07.nyc.dailymotion.com/sec(e6b6eNqYCtBTneU7sjdyObsJmgTPpPjzq_knv8GkXhov6Ej43WB8jLuXZEsZ5Ol1IEBX4TECrx5WmfV2uvYPmKXtqR77DzC6h1wsZ8XQ-G0)/video/688/086/485680886_mp4_h264_aac_hd.m3u8"  -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_108_-_Tatiana_acepta_tener_una_relacion_con_Fercho.mp4"
-    - ffmpeg -i "https://proxy-22.nyc.dailymotion.com/sec(vH_amhAWVjdOjt9rQ-usyLqkze0qP5qJn1JzbD1SksgUVL6tNb7GxNk2DGtwVc7vNFaZ92V1OLo_4fIHpbGkBWLtT38IS2YiihlvBecGBZw)/video/788/086/485680887_mp4_h264_aac_hd.m3u8"  -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_109_-_Francisco_oficializa_su_salida_del_Jimmy_Carter.mp4"
- 
-#    - ffmpeg -i "" -bsf:a aac_adtstoasc -c copy -crf 23 " " 
-    - curl -T ./Capitulo_100_-_Deisy_esta_a_punto_de_viajar.mp4 http://transfer.sh
-    - curl -T ./Capitulo_101_-_Marcela_se_va_de_la_casa.mp4 http://transfer.sh
-    - curl -T ./Capitulo_102_-_Tatiana_defiende_a_Fercho_de_su_padre.mp4 http://transfer.sh
-    - curl -T ./Capitulo_103_-_Deisy_es_detenida_en_el_aeropuerto.mp4 http://transfer.sh
-    - curl -T ./Capitulo_104_-_Ignacio_se_reconcilia_con_Magdalena.mp4 http://transfer.sh
-    - curl -T ./Capitulo_105_-_Francisco_se_entera_de_la_relación_de_Marcela_y_Chacho.mp4 http://transfer.sh
-    - curl -T ./Capitulo_106_-_Magdalena_no_quiere_despedirse_de_Ignacio.mp4 http://transfer.sh
-    - curl -T ./Capitulo_107_-_Duras_elecciones_llegan_a_esta_historia.mp4 http://transfer.sh
-    - curl -T ./Capitulo_108_-_Tatiana_acepta_tener_una_relacion_con_Fercho.mp4 http://transfer.sh
-    - curl -T ./Capitulo_109_-_Francisco_oficializa_su_salida_del_Jimmy_Carter.mp4 http://transfer.sh
-
+    - ffmpeg -i "https://proxy-21.nyc.dailymotion.com/sec(49Ubi9udHuLcl5WIYb0CSvS_uKi8GNnisfFAqn1EuOoY-heGlEwatLhTx3mfqmJKbJhhh-Oc9QfCCwlbpzDeTABtHCFs9_gM5XUs7oRKI5E)/video/625/451/486154526_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_114_-_Tatiana_y_Marcela_se_escapan_a_Villa_de_Leyva.mp4" 
+    - ffmpeg -i "https://proxy-07.nyc.dailymotion.com/sec(EmIm9qZ57xxVtk2oHDZgSrQO7QJxPFp7VamXHIQZGSnljz1ZK6xcO8jlOU2XvaHVaw0EwEOssgA1BZX8vEkJQxXzeB4r8F2F1GAqDwXZvtU)/video/725/451/486154527_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_115_-_Tatiana_cree_conocer_del_pasado_a_Juan_Francisco.mp4" 
+    - curl -T ./Capitulo_114_-_Tatiana_y_Marcela_se_escapan_a_Villa_de_Leyva.mp4 http://transfer.sh
+    - curl -T ./Capitulo_115_-_Tatiana_cree_conocer_del_pasado_a_Juan_Francisco.mp4 http://transfer.sh
