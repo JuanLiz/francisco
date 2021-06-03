@@ -9,7 +9,28 @@ addons:
     
 script:
     - sudo sh -c "mkdir /video && chown $(whoami):$(whoami) /video" && cd /video
-    - ffmpeg -i "https://proxy-21.nyc.dailymotion.com/sec(49Ubi9udHuLcl5WIYb0CSvS_uKi8GNnisfFAqn1EuOoY-heGlEwatLhTx3mfqmJKbJhhh-Oc9QfCCwlbpzDeTABtHCFs9_gM5XUs7oRKI5E)/video/625/451/486154526_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_114_-_Tatiana_y_Marcela_se_escapan_a_Villa_de_Leyva.mp4" 
-    - ffmpeg -i "https://proxy-07.nyc.dailymotion.com/sec(EmIm9qZ57xxVtk2oHDZgSrQO7QJxPFp7VamXHIQZGSnljz1ZK6xcO8jlOU2XvaHVaw0EwEOssgA1BZX8vEkJQxXzeB4r8F2F1GAqDwXZvtU)/video/725/451/486154527_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_115_-_Tatiana_cree_conocer_del_pasado_a_Juan_Francisco.mp4" 
+    - ffmpeg -i "https://proxy-08.nyc.dailymotion.com/sec(aOXeWEr3a_xENLWls5_zvppTEMT2zjjjKVJKlSUZYFa0x6GNRBRr4GrqGNSwIriYFPzZPzonLZz8y4vhZBY5Vt-kz90M2bDyG-YOeH9Bw0U)/video/370/837/485738073_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_110_-_Llega_un_nuevo_Francisco_al_colegio.mp4"
+    - ffmpeg -i "https://proxy-09.nyc.dailymotion.com/sec(Mkgc3P06SdNh4JR9hfG_17o4t9L_YIIa59irVE5iChE8ARhWhMaZ0b4aST2X13GgKN48KT5XsKzWWo45PIemrtDqgJLSodMNB17LeN0xiK8)/video/570/837/485738075_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_111_-_Francisco_conoce_a_sus_alumnos_y_companeros.mp4"
+    - ffmpeg -i "https://proxy-17.nyc.dailymotion.com/sec(EmIm9qZ57xxVtk2oHDZgSmlGRSfdB0TawMVYJ5VcrLS0GLm4yEadi92T9xI4bQs4IE27ejcHenrZVZIRHEieb_Bpj0zIW5J5W46UHeEtdtE)/video/721/388/485883127_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_112_-_Tatiana_finalmente_tiene_una_respuesta.mp4"
+    - ffmpeg -i "https://proxy-17.nyc.dailymotion.com/sec(ZmvFbGxMUUCbjec8a9qzW2yOWTRSxwGI18IqkCQeJJYJxjWKdi3TywCby3Uw74_mBino0f1I0dtj2yrFVu1p5YRIwIszlGPNEErK_0xNtGU)/video/821/388/485883128_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_113_-_Ana_Maria_busca_informacion_sobre_Juan_Francisco.mp4"
+    - ffmpeg -i "https://proxy-22.nyc.dailymotion.com/sec(49Ubi9udHuLcl5WIYb0CSvS_uKi8GNnisfFAqn1EuOoY-heGlEwatLhTx3mfqmJKbJhhh-Oc9QfCCwlbpzDeTGPStAnn16GyPRyzPxTtFeI)/video/625/451/486154526_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_114_-_Tatiana_y_Marcela_se_escapan_a_Villa_de_Leyva.mp4"
+    - ffmpeg -i "https://proxy-07.nyc.dailymotion.com/sec(EmIm9qZ57xxVtk2oHDZgSrQO7QJxPFp7VamXHIQZGSnljz1ZK6xcO8jlOU2XvaHVaw0EwEOssgA1BZX8vEkJQ56ByCYhdUzcjmQb7LlTImk)/video/725/451/486154527_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_115_-_Tatiana_cree_conocer_del_pasado_a_Juan_Francisco.mp4"
+    - ffmpeg -i "https://proxy-19.nyc.dailymotion.com/sec(ZmvFbGxMUUCbjec8a9qzW7Bj7RH291NhKlvyrAAYp0O-8DyDCNoSNjzS7j8Obm-n7jmRstIZuYbsc36klwd1pW-8d6AUq6nXeUwPRD5QZbc)/video/825/451/486154528_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_116_-_Gabriela_aconseja_a_Tatiana_por_su_matrimonio.mp4"
+    - ffmpeg -i "https://proxy-16.nyc.dailymotion.com/sec(MUrjIUhahIVoOWxx8o9LZl-kOMuBLwu9ZVJoBaa_SjW98CmLDiunQcIE-FU9JGIhUMtp358hH7xb4Ok8LX9_DF2m_C0vaV_ka2juj13uIPg)/video/035/451/486154530_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_117_-_Tatiana_y_Fercho_inician_su_matrimonio_a_escondidas.mp4"
+    - ffmpeg -i "https://proxy-04.nyc.dailymotion.com/sec(F2xm4AE_MJz4XuMt-sLSYcokw5yVHJZykcLr3tRmJC-_JncuVdj5hhQattdX6SULe7xw2j1iA2bHdDBxrefp5C15pbDb_aJVhzSDvthmqaE)/video/841/134/486431148_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_118_-_Tatiana_le_pide_perdon_a_su_mama.mp4"
+    - ffmpeg -i "https://proxy-07.nyc.dailymotion.com/sec(QnwGbYX9Ck4JBJsmoqLQiOZWO7SpGZ06m3hUDjF_er9zroySX_SPKY21drrad5qutJtYQa-cOBfWSuSxzIa4EJLTZonsARPWJMxhfY2qfvk)/video/741/134/486431147_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_119_-_Deisy_presume_su_nueva_vida_con_sus_companeros.mp4"
+    - ffmpeg -i "https://proxy-13.nyc.dailymotion.com/sec(QnwGbYX9Ck4JBJsmoqLQiP9YF67gGjcCHLY8_vdbzcdsAZWzzBft1KsOvAvoYRjXPKakoiCvJ8-taxuMF_k23Jr0gjkzF3ng50iozL5y-yQ)/video/743/334/486433347_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_120_-_Juan_Francisco_no_aguanta_a_su_vecina.mp4"
+    - ffmpeg -i "https://proxy-20.nyc.dailymotion.com/sec(F2xm4AE_MJz4XuMt-sLSYc98KHUG4mpDBhbcdDd-GTEWYxqMFvKHEogCKds_1EAe7Nno0bnAcUohAkXBrsXd8vNhPxhyM8_ddWLnrjUzLZI)/video/843/334/486433348_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_121_-_Fercho_se_entera_que_Tatiana_se_fue_del_barrio.mp4"
+    - curl -T ./Capitulo_110_-_Llega_un_nuevo_Francisco_al_colegio.mp4 http://transfer.sh
+    - curl -T ./Capitulo_111_-_Francisco_conoce_a_sus_alumnos_y_companeros.mp4 http://transfer.sh
+    - curl -T ./Capitulo_112_-_Tatiana_finalmente_tiene_una_respuesta.mp4 http://transfer.sh
+    - curl -T ./Capitulo_113_-_Ana_Maria_busca_informacion_sobre_Juan_Francisco.mp4 http://transfer.sh
     - curl -T ./Capitulo_114_-_Tatiana_y_Marcela_se_escapan_a_Villa_de_Leyva.mp4 http://transfer.sh
     - curl -T ./Capitulo_115_-_Tatiana_cree_conocer_del_pasado_a_Juan_Francisco.mp4 http://transfer.sh
+    - curl -T ./Capitulo_116_-_Gabriela_aconseja_a_Tatiana_por_su_matrimonio.mp4 http://transfer.sh
+    - curl -T ./Capitulo_117_-_Tatiana_y_Fercho_inician_su_matrimonio_a_escondidas.mp4 http://transfer.sh
+    - curl -T ./Capitulo_118_-_Tatiana_le_pide_perdon_a_su_mama.mp4 http://transfer.sh
+    - curl -T ./Capitulo_119_-_Deisy_presume_su_nueva_vida_con_sus_companeros.mp4 http://transfer.sh
+    - curl -T ./Capitulo_120_-_Juan_Francisco_no_aguanta_a_su_vecina.mp4 http://transfer.sh
+    - curl -T ./Capitulo_121_-_Fercho_se_entera_que_Tatiana_se_fue_del_barrio.mp4 http://transfer.sh
+
