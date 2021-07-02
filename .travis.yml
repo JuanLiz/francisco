@@ -9,14 +9,12 @@ addons:
     - ffmpeg
     
 script:
-    - ffmpeg -i "https://proxy-04.nyc.dailymotion.com/sec(saQeXx3qXZg3T3rkC8HACES2PyNhCoKgaLWMG8X1Vmdu1I2SahY_RJ-2bWkQD7XBQaOyaSi9Ka1T1RC0dQxHFvjsbuvMVQfvz1B965PPAVM)/video/482/927/486729284_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capítulo_125_-_Marcela_y_Gabriela_van_a_visitar_a_Tati.mp4"
     - ffmpeg -i "https://proxy-12.nyc.dailymotion.com/sec(UoA1sdU9rYQHE4nL1sa5RC-PEzw6MjO8OXig78nHH8JWrX2OcvMIj59kXDYl1uNgy19WITp7GnZ2U84XgpAmDCNyy02yA8FG3pbR7n0X8tA)/video/326/222/487222623_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_128_-_Deisy_es_retenida_por_llevar_drogas.mp4"
     - ffmpeg -i "https://proxy-22.nyc.dailymotion.com/sec(djkNaqskckCuO1ExU1TbM3ndfUZlHwGDhbce8aa0atGhYhNw8b9UogrB0bQf4JLgwXY4MwjOpoKmNOquXiZCOHn9wvZQK0BrTyQ8sFq2xCY)/video/101/381/487183101_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_129_-_Gabriela_pide_ayuda_por_Deisy.mp4"
     - ffmpeg -i "https://proxy-16.nyc.dailymotion.com/sec(QRmsThsc0NdxOo1LPpbD10JNXRc2SgxC4cRjUpRJa29GTdR27mQijhm4lyFAuc60rs8euMurml1Em9wfHijpVbmjfffGM_pjvR1UqmbBdWQ)/video/110/694/487496011_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_130_-_Ana_Maria_esta_triste_por_la_situación_de_Deisy.mp4"
     - ffmpeg -i "https://proxy-13.nyc.dailymotion.com/sec(MuyucYrWgkoHg2i5QVRo5pFR3bXN7YhdDfafZiyU5SvroOwWBMT7Apw5qLloQlwWBeb7rWJN3c1M9Eo4mNNmE8FstJrpYSzvRqPJRDkW__0)/video/310/694/487496013_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_131_-_Gabriela_hace_huelga_para_ayudar_a_Deisy.mp4"
     - ffmpeg -i "https://proxy-16.nyc.dailymotion.com/sec(wb8UD9xdr7EUNWDnSkNP3XfTn_Iz2qyOMqwSAUvRO7e0jzRQ1qgCRo1ot9d_2qHxfjwtltDtuwyuYZDR15vPdorTF87Dw46mHoEMvl6kS0A)/video/850/505/487505058_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_132_-_Ana_Maria_conoce_a_un_personaje_especial.mp4"
     - ffmpeg -i "https://proxy-11.nyc.dailymotion.com/sec(q7wHNBo9zV_qod5lIeRMXOAA8LPhb7VveujCKL2icsfsMBpqvjEs85iGWQLyyhzOnj6q6t0HjTMMcX-stfLb186yA-9IMwqfQyWnzgk4yPw)/video/750/505/487505057_mp4_h264_aac_hd.m3u8" -bsf:a aac_adtstoasc -c copy -crf 23 "Capitulo_133_-_Llega_el_apuesto_Chuly_a_esta_historia.mp4"
-    - curl -T ./Capítulo_125_-_Marcela_y_Gabriela_van_a_visitar_a_Tati.mp4 http://transfer.sh
     - curl -T ./Capitulo_128_-_Deisy_es_retenida_por_llevar_drogas.mp4 http://transfer.sh
     - curl -T ./Capitulo_129_-_Gabriela_pide_ayuda_por_Deisy.mp4 http://transfer.sh
     - curl -T ./Capitulo_130_-_Ana_Maria_esta_triste_por_la_situación_de_Deisy.mp4 http://transfer.sh
